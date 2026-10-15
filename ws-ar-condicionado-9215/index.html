@@ -4,144 +4,286 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>WS Ar Condicionado · Ar-condicionado em Itaquera</title>
-<meta name="description" content="Instalação, higienização e manutenção de ar-condicionado em Itaquera. Orçamento pelo WhatsApp.">
+<meta name="description" content="Instalação, higienização e manutenção de ar-condicionado em Itaquera, São Paulo. Orçamento pelo WhatsApp.">
 <meta name="robots" content="noindex">
 <meta property="og:title" content="WS Ar Condicionado · Ar-condicionado em Itaquera">
-<meta property="og:description" content="Instalação, higienização e manutenção de ar-condicionado em Itaquera. Orçamento pelo WhatsApp.">
+<meta property="og:description" content="Instalação, higienização e manutenção de ar-condicionado em Itaquera, São Paulo. Orçamento pelo WhatsApp.">
+<meta property="og:image" content="https://images.unsplash.com/photo-1787675907927-ae62773f56f6?w=1200&h=630&q=72&auto=format&fit=crop">
+<meta name="theme-color" content="#0b1d33">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..900&family=Share+Tech+Mono&display=swap" rel="stylesheet">
-<style>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>:root{--titulo:'Bricolage Grotesque',system-ui,sans-serif;--texto:'Manrope',system-ui,sans-serif;--peso-titulo:700;--track-titulo:-.035em;--estilo-destaque:normal;--fundo:#eef3f8;--faixa:#e3ebf3;--cartao:#f9fbfd;--tinta:#0b1d33;--suave:#4f6075;--suave-2:#b4c2d1;--linha:rgba(11,29,51,.12);--acento:#1f7cf0;--acento-texto:#1667cf;--acento-claro:#7fc0ff;--sobre-acento:#fff;--botao:#0b1d33;--sobre-botao:#f2f7fc;--sombra:rgba(11,29,51,.5);--vivo:#22b36b;--raio-foto:32px;--escuro:#0b1d33;--escuro-fundo:#0b1d33;--sobre-escuro:#eef4fa;--sobre-escuro-suave:#9fb3c9;--sobre-escuro-linha:rgba(238,244,250,.14);--chamada:#1f7cf0;--sobre-chamada:#fff}
 *{box-sizing:border-box;margin:0;padding:0}
-a{color:inherit}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{font-family:var(--texto);color:var(--tinta);background:var(--fundo);line-height:1.55;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+a{color:inherit;text-decoration:none}
 img{display:block;max-width:100%}
-.demo{background:#101317;color:#fff;font:500 12px/1.4 system-ui,sans-serif;text-align:center;padding:7px 14px}
-.flutuante{position:fixed;right:18px;bottom:18px;z-index:20;width:58px;height:58px;border-radius:50%;background:#25d366;color:#fff;display:grid;place-items:center;box-shadow:0 10px 24px -8px rgba(0,0,0,.45);transition:transform .2s cubic-bezier(.16,1,.3,1)}
-.flutuante:hover{transform:scale(1.06)}
-.flutuante svg{width:30px;height:30px}
-@media (prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}}
+::selection{background:var(--acento);color:var(--sobre-acento)}
+:focus-visible{outline:2.5px solid var(--acento);outline-offset:3px;border-radius:6px}
+*{scrollbar-width:thin;scrollbar-color:var(--suave-2) transparent}
+.demo{background:var(--escuro);color:var(--sobre-escuro);font:500 12px/1.4 var(--texto);text-align:center;padding:7px 16px;opacity:.92}
+.box{width:min(1200px,100% - 40px);margin-inline:auto}
+h1,h2,h3{font-family:var(--titulo);font-weight:var(--peso-titulo);letter-spacing:var(--track-titulo);line-height:1.04;text-wrap:balance}
+h1 em,h2 em{font-style:var(--estilo-destaque);color:var(--acento-texto)}
+.botao{display:inline-flex;align-items:center;gap:10px;padding:15px 22px 15px 24px;border-radius:999px;background:var(--botao);color:var(--sobre-botao);font-weight:650;font-size:.98rem;box-shadow:0 12px 26px -14px var(--sombra);transition:transform .25s cubic-bezier(.16,1,.3,1),box-shadow .25s}
+.botao:hover{transform:translateY(-2px);box-shadow:0 18px 30px -14px var(--sombra)}
+.botao svg{width:19px;height:19px}
+.link{display:inline-flex;align-items:center;gap:8px;font-weight:600;border-bottom:1.5px solid currentColor;padding-bottom:2px}
+.link svg{width:16px;height:16px;transition:transform .25s}
+.link:hover svg{transform:translateX(3px)}
 
-:root{--abs:#f3f5f6;--abs-sombra:#dde2e5;--tinta:#101317;--suave:#4a525b;--amarelo:#ffd400;--amarelo-escuro:#e8c000;--led:#34e0c2;--visor:#0d1417;--ar:#9cc9e8}
-html{background:var(--abs)}
-body{font-family:'Archivo',system-ui,sans-serif;color:var(--tinta);background:linear-gradient(90deg,#eef1f3,#f8f9fa 30%,#f1f3f5 70%,#e9edf0);-webkit-font-smoothing:antialiased;line-height:1.45}
-::selection{background:var(--amarelo);color:var(--tinta)}
-:focus-visible{outline:3px solid var(--tinta);outline-offset:3px}
-.pagina{max-width:760px;margin:0 auto;padding:22px 16px 80px}
-/* unidade interna */
-.unidade{position:relative;background:linear-gradient(180deg,#ffffff 0%,#f4f6f7 55%,#e8ecee 100%);border-radius:18px 18px 26px 26px;box-shadow:0 2px 0 #fff inset,0 -3px 0 #d9dee1 inset,0 22px 40px -26px rgba(16,19,23,.55);padding:18px 18px 0;overflow:hidden}
-.unidade .grade{height:10px;background:repeating-linear-gradient(90deg,#d5dbde 0 3px,transparent 3px 7px);border-radius:3px;opacity:.8}
-.unidade .face{display:flex;justify-content:space-between;align-items:center;padding:22px 4px 20px}
-.unidade .marca-u{font-weight:700;font-stretch:115%;font-size:.8rem;letter-spacing:.24em;color:#5f6a72;text-transform:uppercase}
-.visor{display:flex;align-items:baseline;gap:4px;background:var(--visor);border-radius:8px;padding:8px 12px;box-shadow:0 1px 0 #fff,0 0 0 1px #c9d0d4}
-.visor b{font-family:'Share Tech Mono',monospace;font-weight:400;font-size:2rem;line-height:1;color:var(--led)}
-.visor small{font-family:'Share Tech Mono',monospace;color:var(--led);opacity:.75;font-size:.8rem}
-.aleta{height:26px;margin:0 -18px;background:linear-gradient(180deg,#e3e8eb,#c9d1d6);border-top:1px solid #cdd4d8;transform-origin:top;animation:aleta 1.4s .2s cubic-bezier(.16,1,.3,1) both}
-@keyframes aleta{from{transform:rotateX(0)}to{transform:rotateX(38deg)}}
-.vento{position:relative;height:74px;margin-top:-4px;overflow:hidden;pointer-events:none}
-.vento i{position:absolute;top:-30px;width:2px;height:46px;border-radius:2px;background:linear-gradient(180deg,transparent,var(--ar),transparent);opacity:.0;animation:vento 2.8s linear infinite}
-@keyframes vento{0%{transform:translate(0,0);opacity:0}25%{opacity:.85}100%{transform:translate(-14px,110px);opacity:0}}
-/* etiqueta */
-.etiqueta{position:relative;background:var(--amarelo);border:2.5px solid var(--tinta);border-radius:6px;transform:rotate(-1.3deg);box-shadow:0 18px 30px -18px rgba(16,19,23,.6);margin:-24px 8px 0}
-.etiqueta::after{content:"";position:absolute;right:-2px;bottom:-2px;width:28px;height:28px;background:linear-gradient(135deg,var(--amarelo-escuro) 50%,#f8f9fa 50%);border-left:2px solid var(--tinta);border-top:2px solid var(--tinta);border-radius:0 0 4px 0}
-.cab{display:flex;justify-content:space-between;align-items:center;background:var(--tinta);color:var(--amarelo);padding:8px 12px;font-weight:800;font-stretch:80%;font-size:.86rem;letter-spacing:.1em;text-transform:uppercase}
-.campo{border-bottom:2px solid var(--tinta);padding:8px 12px 10px}
-.campo small{display:block;font-weight:700;font-stretch:80%;font-size:.7rem;letter-spacing:.12em;text-transform:uppercase}
-.campo .valor{font-weight:900;font-stretch:75%;line-height:.95;letter-spacing:-.01em;text-transform:uppercase}
-.empresa .valor{font-size:clamp(2.1rem,10.5vw,3.6rem);text-wrap:balance}
-.linha{display:grid;grid-template-columns:repeat(3,1fr)}
-.linha .campo+.campo{border-left:2px solid var(--tinta)}
-.linha .valor{font-size:clamp(1.15rem,5vw,1.6rem)}
-.estrelas{display:inline-flex;gap:1px;vertical-align:-1px;margin-left:3px}
-.estrelas i{width:14px;height:14px;opacity:.25}.estrelas i.on{opacity:1}
+/* topo */
+.topo{position:sticky;top:0;z-index:30;background:color-mix(in srgb,var(--fundo) 78%,transparent);backdrop-filter:blur(14px) saturate(1.4);-webkit-backdrop-filter:blur(14px) saturate(1.4);border-bottom:1px solid var(--linha)}
+.topo .box{display:flex;align-items:center;gap:28px;height:68px}
+.marca{font-family:var(--titulo);font-weight:var(--peso-titulo);font-size:1.12rem;letter-spacing:var(--track-titulo);white-space:nowrap}
+.marca small{font-family:var(--texto);font-weight:500;font-size:.8rem;letter-spacing:0;color:var(--suave);margin-left:6px}
+.topo nav{display:flex;gap:26px;margin-left:auto;font-size:.92rem;color:var(--suave)}
+.topo nav a:hover{color:var(--tinta)}
+.topo .botao{padding:10px 16px 10px 18px;font-size:.88rem}
+@media (max-width:860px){.topo nav{display:none}.topo .botao{margin-left:auto}.marca small{display:none}}
+
+/* hero */
+.hero{padding:clamp(36px,6vw,80px) 0 clamp(28px,4vw,48px)}
+.hero .box{display:grid;grid-template-columns:1.08fr .92fr;gap:clamp(28px,5vw,72px);align-items:center}
+.hero h1{font-size:clamp(2.6rem,6.4vw,5.4rem);margin:0 0 22px}
+.hero .sub{font-size:clamp(1.02rem,1.4vw,1.15rem);color:var(--suave);max-width:44ch}
+.hero .acoes{display:flex;flex-wrap:wrap;align-items:center;gap:22px;margin-top:30px}
+.local{display:inline-flex;align-items:center;gap:8px;font-size:.9rem;color:var(--suave);margin-bottom:22px}
+.local i{width:8px;height:8px;border-radius:50%;background:var(--vivo);box-shadow:0 0 0 4px color-mix(in srgb,var(--vivo) 22%,transparent)}
+.fatos{display:flex;gap:clamp(18px,4vw,44px);margin-top:clamp(34px,5vw,56px);padding-top:22px;border-top:1px solid var(--linha)}
+.fatos b{display:block;font-family:var(--titulo);font-weight:var(--peso-titulo);font-size:clamp(1.5rem,2.6vw,2.1rem);letter-spacing:var(--track-titulo);line-height:1}
+.fatos span{font-size:.84rem;color:var(--suave)}
+.palco{position:relative}
+.moldura{position:relative;overflow:hidden;border-radius:var(--raio-foto);aspect-ratio:4/5;box-shadow:0 30px 60px -36px var(--sombra)}
+.moldura img{width:100%;height:100%;object-fit:cover;transform:scale(1.04);animation:respira 18s ease-in-out infinite alternate}
+@keyframes respira{to{transform:scale(1.12)}}
+.cartao{position:absolute;background:color-mix(in srgb,var(--cartao) 86%,transparent);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border:1px solid color-mix(in srgb,var(--cartao) 60%,transparent);border-radius:18px;padding:14px 16px;box-shadow:0 18px 36px -18px var(--sombra);font-size:.86rem;color:var(--tinta)}
+.cartao b{display:block;font-size:1rem}
+.cartao.nota{top:22px;left:-26px;display:flex;align-items:center;gap:12px}
+.cartao.nota strong{font-family:var(--titulo);font-weight:var(--peso-titulo);font-size:2rem;line-height:1;letter-spacing:var(--track-titulo)}
+.cartao.agenda{right:-18px;bottom:28px;max-width:230px}
+.cartao.agenda .vivo{display:flex;align-items:center;gap:7px;font-size:.72rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--suave);margin-bottom:6px}
+.cartao.agenda .vivo i{width:7px;height:7px;border-radius:50%;background:var(--vivo)}
+.cartao.agenda a{display:inline-flex;align-items:center;gap:6px;margin-top:10px;font-weight:650;color:var(--acento-texto)}
+.cartao.agenda a svg{width:15px;height:15px}
+.estrelas{display:inline-flex;gap:2px;color:#f2b01e}
+.estrelas i{width:14px;height:14px;opacity:.3}.estrelas i.on{opacity:1}
 .estrelas svg{width:100%;height:100%}
-.servicos{list-style:none;display:grid;grid-template-columns:1fr 1fr;gap:6px 12px;margin-top:6px}
-.servicos li{display:flex;align-items:center;gap:8px;font-weight:700;font-size:.95rem}
-.servicos li::before{content:"";width:15px;height:15px;flex:none;border:2px solid var(--tinta);background:linear-gradient(45deg,transparent 42%,var(--tinta) 42% 58%,transparent 58%),linear-gradient(-45deg,transparent 42%,var(--tinta) 42% 58%,transparent 58%)}
-.tel .valor{font-size:clamp(1.9rem,9vw,3rem);font-variant-numeric:tabular-nums}
-.proxima{display:flex;gap:14px;align-items:flex-end}
-.proxima span{flex:1;border-bottom:2px dashed var(--tinta);height:26px}
-.botao{display:flex;align-items:center;justify-content:center;gap:10px;margin:12px;padding:17px 18px;background:var(--tinta);color:var(--amarelo);text-decoration:none;font-weight:900;font-stretch:85%;font-size:1.15rem;text-transform:uppercase;letter-spacing:.02em;border-radius:4px;transition:transform .2s cubic-bezier(.16,1,.3,1),background .2s}
-.botao:hover{transform:translateY(-2px);background:#000}
-.botao svg{width:22px;height:22px;color:#25d366}
+@media (max-width:860px){.hero .box{grid-template-columns:1fr}.palco{max-width:460px;width:100%;margin:8px auto 0}.cartao.nota{left:-6px}.cartao.agenda{right:-6px}}
+
+/* faixa */
+.faixa{overflow:hidden;padding:18px 0;border-block:1px solid var(--linha);background:var(--faixa)}
+.faixa .trilho{display:flex;gap:14px;width:max-content;animation:corre 38s linear infinite}
+.faixa span{display:inline-flex;align-items:center;gap:10px;white-space:nowrap;padding:9px 18px;border-radius:999px;background:var(--cartao);border:1px solid var(--linha);font-weight:600;font-size:.92rem}
+.faixa span i{width:7px;height:7px;border-radius:50%;background:var(--acento)}
+@keyframes corre{to{transform:translateX(-50%)}}
+
 /* seções */
-.secao{margin-top:64px}
-.secao h2{font-weight:900;font-stretch:80%;font-size:clamp(1.7rem,6.8vw,2.6rem);line-height:1;text-transform:uppercase;letter-spacing:-.01em;margin-bottom:18px;max-width:20ch}
-.placa{background:linear-gradient(180deg,#e9edef,#d4dadd);border:1px solid #b9c1c6;border-radius:8px;padding:6px 16px;box-shadow:0 1px 0 #fff inset}
-.placa div{display:grid;grid-template-columns:minmax(120px,.8fr) 1.6fr;gap:14px;padding:13px 0;border-bottom:1px solid #b9c1c6}
-.placa div:last-child{border-bottom:0}
-.placa b{font-weight:800;font-stretch:85%;text-transform:uppercase;font-size:.95rem}
-.placa p{color:var(--suave);font-size:.97rem}
-.prova{display:flex;gap:22px;align-items:center;flex-wrap:wrap}
-.prova .num{font-weight:900;font-stretch:75%;font-size:clamp(4rem,20vw,6rem);line-height:.85;letter-spacing:-.02em}
-.prova p{max-width:34ch;color:var(--suave)}
-.prova a{display:inline-block;margin-top:8px;font-weight:700;text-underline-offset:4px}
-.duas{display:grid;gap:22px}
-@media (min-width:640px){.duas{grid-template-columns:1fr 1fr}}
+.secao{padding:clamp(64px,9vw,120px) 0}
+.cabeca{display:grid;grid-template-columns:1fr 1fr;gap:24px;align-items:end;margin-bottom:clamp(30px,4vw,52px)}
+.cabeca h2{font-size:clamp(2rem,4.2vw,3.4rem)}
+.cabeca p{color:var(--suave);max-width:42ch;justify-self:end}
+@media (max-width:760px){.cabeca{grid-template-columns:1fr}.cabeca p{justify-self:start}}
+
+/* serviços: um grande + dois menores */
+.servicos{display:grid;grid-template-columns:1.25fr 1fr;grid-template-rows:auto auto;gap:18px}
+.serv{position:relative;overflow:hidden;border-radius:28px;background:var(--cartao);border:1px solid var(--linha);display:flex;flex-direction:column}
+.serv .img{overflow:hidden}
+.serv img{width:100%;height:100%;object-fit:cover;transition:transform .6s cubic-bezier(.16,1,.3,1)}
+.serv:hover img{transform:scale(1.05)}
+.serv .txt{padding:22px 24px 24px}
+.serv h3{font-size:clamp(1.3rem,2vw,1.6rem);margin-bottom:8px}
+.serv p{color:var(--suave);font-size:.96rem;max-width:44ch}
+.serv .tag{position:absolute;top:16px;left:16px;background:color-mix(in srgb,var(--cartao) 90%,transparent);backdrop-filter:blur(8px);border-radius:999px;padding:6px 12px;font-size:.78rem;font-weight:600}
+.serv.grande{grid-row:1/3}
+.serv.grande .img{flex:1;min-height:320px}
+.serv.pequeno{flex-direction:row}
+.serv.pequeno .img{width:42%;flex:none}
+.serv.pequeno .txt{align-self:center}
+@media (max-width:760px){.servicos{grid-template-columns:1fr}.serv.grande{grid-row:auto}.serv.grande .img{min-height:240px}.serv.pequeno{flex-direction:column}.serv.pequeno .img{width:100%;height:190px}}
+
+/* bloco escuro */
+.escuro{margin:0 clamp(8px,1.6vw,24px);border-radius:clamp(28px,4vw,48px);background:var(--escuro-fundo);color:var(--sobre-escuro);padding:clamp(56px,8vw,104px) 0;position:relative;overflow:hidden;isolation:isolate}
+.escuro .box{display:grid;grid-template-columns:.9fr 1.1fr;gap:clamp(30px,6vw,90px)}
+.escuro h2{font-size:clamp(2rem,4.2vw,3.4rem);color:var(--sobre-escuro)}
+.escuro h2 em{color:var(--acento-claro)}
+.escuro .intro{color:var(--sobre-escuro-suave);margin:18px 0 28px;max-width:40ch}
+.escuro .colagem{position:relative;height:clamp(240px,30vw,340px)}
+.escuro .colagem img{position:absolute;border-radius:20px;object-fit:cover;box-shadow:0 24px 40px -20px rgba(0,0,0,.6)}
+.escuro .colagem img:first-child{width:62%;height:82%;left:0;top:0}
+.escuro .colagem img:last-child{width:50%;height:62%;right:0;bottom:0;border:5px solid var(--escuro-fundo)}
+.passos{list-style:none;counter-reset:p}
+.passos li{counter-increment:p;display:grid;grid-template-columns:56px 1fr;gap:18px;padding:22px 0;border-bottom:1px solid var(--sobre-escuro-linha)}
+.passos li:first-child{padding-top:4px}
+.passos li::before{content:counter(p,decimal-leading-zero);font-family:var(--titulo);font-size:1.5rem;color:var(--acento-claro);line-height:1.1}
+.passos h3{font-size:clamp(1.25rem,2.2vw,1.65rem);color:var(--sobre-escuro);margin-bottom:6px}
+.passos p{color:var(--sobre-escuro-suave);max-width:46ch}
+@media (max-width:860px){.escuro .box{grid-template-columns:1fr}}
+
+/* prova */
+.prova{display:grid;grid-template-columns:auto 1fr auto;gap:clamp(20px,4vw,56px);align-items:center;padding:clamp(28px,4vw,44px);border-radius:32px;background:var(--cartao);border:1px solid var(--linha)}
+.prova .num{font-family:var(--titulo);font-weight:var(--peso-titulo);font-size:clamp(4.4rem,10vw,7.5rem);line-height:.85;letter-spacing:-.04em}
+.prova h2{font-size:clamp(1.5rem,2.8vw,2.2rem);margin-bottom:8px}
+.prova p{color:var(--suave);max-width:44ch}
+.prova .estrelas i{width:20px;height:20px}
+@media (max-width:760px){.prova{grid-template-columns:1fr}}
+
+/* perguntas */
+.faq{display:grid;grid-template-columns:.8fr 1.2fr;gap:clamp(24px,5vw,80px)}
+.faq h2{font-size:clamp(2rem,4.2vw,3.4rem)}
+.faq .lado p{color:var(--suave);margin-top:16px;max-width:34ch}
+details{border-bottom:1px solid var(--linha)}
+summary{list-style:none;display:flex;justify-content:space-between;align-items:center;gap:16px;padding:22px 0;cursor:pointer;font-weight:600;font-size:1.05rem}
+summary::-webkit-details-marker{display:none}
+summary span{display:grid;place-items:center;width:34px;height:34px;flex:none;border-radius:50%;border:1px solid var(--linha);transition:transform .3s,background .3s}
+summary span svg{width:16px;height:16px}
+details[open] summary span{transform:rotate(45deg);background:var(--acento);color:var(--sobre-acento);border-color:var(--acento)}
+details p{padding:0 0 22px;color:var(--suave);max-width:58ch}
+@media (max-width:760px){.faq{grid-template-columns:1fr}}
+
+/* onde e quando */
+.onde{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.onde .card{border-radius:32px;background:var(--cartao);border:1px solid var(--linha);padding:clamp(26px,4vw,40px)}
+.onde h2{font-size:clamp(1.7rem,3.2vw,2.5rem);margin-bottom:18px}
+.onde .end{display:flex;gap:10px;color:var(--suave);margin-bottom:22px}
+.onde .end svg{width:20px;height:20px;flex:none;color:var(--tinta);margin-top:3px}
 .horas{width:100%;border-collapse:collapse;font-variant-numeric:tabular-nums}
-.horas td{padding:8px 0;border-bottom:1px solid #c9d0d4}
-.horas td:last-child{text-align:right;font-weight:700}
-.end{display:flex;gap:10px;color:var(--suave)}
-.end svg{width:20px;height:20px;flex:none;color:var(--tinta);margin-top:2px}
-.fecho{margin-top:64px;background:var(--tinta);color:#fff;border-radius:10px;padding:34px 22px;text-align:center}
-.fecho h2{font-weight:900;font-stretch:80%;font-size:clamp(1.7rem,6.8vw,2.6rem);line-height:1;text-transform:uppercase;color:var(--amarelo);margin:0 auto 10px}
-.fecho p{color:#c8cfd4;margin-bottom:20px}
-.fecho .botao{background:var(--amarelo);color:var(--tinta);margin:0 auto;max-width:420px}
-.fecho .botao:hover{background:#ffe14d}
-@media (max-width:420px){.cab-dir{display:none}.linha .campo{padding:8px 8px 10px}.linha .valor{font-size:1.05rem}.linha .estrelas{display:flex;margin:4px 0 0}.estrelas i{width:11px;height:11px}.servicos{grid-template-columns:1fr}}
-</style>
+.horas td{padding:9px 0;border-bottom:1px solid var(--linha)}
+.horas td:last-child{text-align:right;font-weight:600}
+.onde .mapa{border-radius:32px;overflow:hidden;min-height:300px;position:relative}
+.onde .mapa img{width:100%;height:100%;object-fit:cover;position:absolute;inset:0}
+.onde .mapa a{position:absolute;left:18px;bottom:18px}
+@media (max-width:760px){.onde{grid-template-columns:1fr}}
+
+/* chamada final */
+.chamada{border-radius:clamp(28px,4vw,48px);background:var(--chamada);color:var(--sobre-chamada);padding:clamp(44px,7vw,88px) clamp(24px,6vw,80px);display:grid;grid-template-columns:1.3fr .7fr;gap:28px;align-items:end;position:relative;overflow:hidden}
+.chamada h2{font-size:clamp(2.2rem,5.2vw,4.4rem)}
+.chamada p{margin-top:16px;max-width:42ch;opacity:.85}
+.chamada .botao{justify-self:end}
+@media (max-width:760px){.chamada{grid-template-columns:1fr}.chamada .botao{justify-self:start}}
+
+/* rodapé */
+footer{margin-top:clamp(56px,8vw,96px);background:var(--escuro-fundo);color:var(--sobre-escuro);border-radius:clamp(28px,4vw,44px) clamp(28px,4vw,44px) 0 0;padding:48px 0 26px;overflow:hidden}
+footer .cols{display:grid;grid-template-columns:1.2fr 1fr 1fr;gap:28px;font-size:.92rem;color:var(--sobre-escuro-suave)}
+footer .cols b{display:block;color:var(--sobre-escuro);margin-bottom:10px;font-size:.95rem}
+footer .cols a:hover{color:var(--sobre-escuro)}
+footer .gigante{font-family:var(--titulo);font-weight:var(--peso-titulo);font-size:clamp(3.4rem,13vw,12rem);line-height:.82;letter-spacing:-.045em;color:color-mix(in srgb,var(--sobre-escuro) 14%,transparent);margin:46px 0 18px;white-space:nowrap;overflow:hidden;text-overflow:clip}
+footer .base{display:flex;justify-content:space-between;gap:16px;font-size:.8rem;color:var(--sobre-escuro-suave)}
+@media (max-width:760px){footer .cols{grid-template-columns:1fr}footer .base{flex-direction:column}}
+
+.flutuante{position:fixed;right:18px;bottom:18px;z-index:40;width:58px;height:58px;border-radius:50%;background:#25d366;color:#fff;display:grid;place-items:center;box-shadow:0 12px 26px -8px rgba(0,0,0,.45);transition:transform .25s cubic-bezier(.16,1,.3,1)}
+.flutuante:hover{transform:scale(1.07)}
+.flutuante svg{width:30px;height:30px}
+
+/* entrada: visível por padrão, sobe de leve quando o JS marca */
+.js .sobe{opacity:0;transform:translateY(22px);transition:opacity .9s cubic-bezier(.16,1,.3,1),transform .9s cubic-bezier(.16,1,.3,1)}
+.js .sobe.ok{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}.js .sobe{opacity:1;transform:none}}
+.chamada .botao{background:#fff;color:#0b1d33}.chamada h2 em{color:#0b1d33}</style>
 </head>
 <body>
 <div class="demo">Prévia de demonstração criada por Juan Carvalho, sem vínculo oficial com WS Ar Condicionado.</div>
 
-<main class="pagina">
-  <div class="unidade" aria-hidden="true">
-    <div class="grade"></div>
-    <div class="face"><span class="marca-u">Inverter</span><span class="visor"><b>23°</b><small>C</small></span></div>
-    <div class="aleta"></div>
+<header class="topo"><div class="box">
+  <a class="marca" href="#inicio">WS Ar Condicionado<small>Ar-condicionado</small></a>
+  <nav aria-label="Seções"><a href="#servicos">Serviços</a><a href="#como">Como funciona</a><a href="#duvidas">Dúvidas</a><a href="#onde">Onde</a></nav>
+  <a class="botao" href="https://wa.me/5511942939215?text=Ol%C3%A1!%20Vim%20pelo%20site%20e%20gostaria%20de%20um%20or%C3%A7amento.">Orçamento <svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+</div></header>
+
+<main id="inicio">
+<section class="hero"><div class="box">
+  <div>
+    <p class="local"><i></i>Atendimento em Itaquera e região</p>
+    <h1>Ar gelado antes do <em>calor chegar.</em></h1>
+    <p class="sub">Instalação, higienização e manutenção de ar-condicionado para casas, comércios e escritórios em São Paulo. Orçamento rápido pelo WhatsApp.</p>
+    <div class="acoes">
+      <a class="botao" href="https://wa.me/5511942939215?text=Ol%C3%A1!%20Vim%20pelo%20site%20e%20gostaria%20de%20um%20or%C3%A7amento."><svg viewBox="0 0 24 24" aria-hidden="true" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8s-.4-.1-.6.1-.7.8-.8 1-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.2-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.8 11.9 11.9 0 0 0 4.6 4c1.7.7 2.3.8 3.2.6a2.7 2.7 0 0 0 1.8-1.2 2.2 2.2 0 0 0 .1-1.3c0-.1-.2-.2-.4-.3Z"/></svg> Pedir orçamento</a>
+      <a class="link" href="#como">Como funciona <svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+    </div>
+    <div class="fatos">
+      <div><b>4,9</b><span>nota no Google</span></div><div><b>51</b><span>avaliações</span></div>
+      <div><b>Itaquera</b><span>e região</span></div>
+    </div>
   </div>
-  <div class="vento" aria-hidden="true"><i style="left:8%;animation-delay:0s"></i><i style="left:18.5%;animation-delay:0.37s"></i><i style="left:29%;animation-delay:0.74s"></i><i style="left:39.5%;animation-delay:1.1099999999999999s"></i><i style="left:50%;animation-delay:1.48s"></i><i style="left:60.5%;animation-delay:1.85s"></i><i style="left:71%;animation-delay:2.2199999999999998s"></i><i style="left:81.5%;animation-delay:2.59s"></i><i style="left:92%;animation-delay:0.16000000000000014s"></i></div>
+  <div class="palco">
+    <div class="moldura"><img src="https://images.unsplash.com/photo-1787675907927-ae62773f56f6?w=900&h=1125&q=72&auto=format&fit=crop" alt="Ar-condicionado instalado em parede de madeira" width="900" height="1125" fetchpriority="high"></div>
+    <div class="cartao nota"><strong>4,9</strong><div><span class="estrelas" role="img" aria-label="4,9 de 5 estrelas"><i class="on"><svg viewBox="0 0 24 24" aria-hidden="true" fill="currentColor"><path d="m12 2.5 2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.4l-5.9 3.1 1.2-6.5L2.5 9.4l6.6-.9Z"/></svg></i><i class="on"><svg viewBox="0 0 24 24" aria-hidden="true" fill="currentColor"><path d="m12 2.5 2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.4l-5.9 3.1 1.2-6.5L2.5 9.4l6.6-.9Z"/></svg></i><i class="on"><svg viewBox="0 0 24 24" aria-hidden="true" fill="currentColor"><path d="m12 2.5 2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.4l-5.9 3.1 1.2-6.5L2.5 9.4l6.6-.9Z"/></svg></i><i class="on"><svg viewBox="0 0 24 24" aria-hidden="true" fill="currentColor"><path d="m12 2.5 2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.4l-5.9 3.1 1.2-6.5L2.5 9.4l6.6-.9Z"/></svg></i><i class="on"><svg viewBox="0 0 24 24" aria-hidden="true" fill="currentColor"><path d="m12 2.5 2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.4l-5.9 3.1 1.2-6.5L2.5 9.4l6.6-.9Z"/></svg></i></span><span style="display:block;margin-top:3px">51 avaliações no Google</span></div></div>
+    <div class="cartao agenda"><span class="vivo"><i></i>Orçamento pelo WhatsApp</span><b>Seg a Sex · 09:00–18:00</b><a href="https://wa.me/5511942939215?text=Ol%C3%A1!%20Vim%20pelo%20site%20e%20gostaria%20de%20um%20or%C3%A7amento.">Orçamento <svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></div>
+  </div>
+</div></section>
 
-  <article class="etiqueta">
-    <div class="cab"><span>Etiqueta de manutenção</span><span class="cab-dir">Ar-condicionado</span></div>
-    <div class="campo empresa"><h1 class="valor">WS Ar Condicionado</h1></div>
-    <div class="linha">
-      <div class="campo"><small>Região</small><div class="valor">Itaquera</div></div>
-      <div class="campo"><small>Nota Google</small><div class="valor">4,9<span class="estrelas " role="img" aria-label="4,9 de 5 estrelas"><i class="on"><svg viewBox="0 0 24 24" aria-hidden="true" fill="currentColor"><path d="m12 2.5 2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.4l-5.9 3.1 1.2-6.5L2.5 9.4l6.6-.9Z"/></svg></i><i class="on"><svg viewBox="0 0 24 24" aria-hidden="true" fill="currentColor"><path d="m12 2.5 2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.4l-5.9 3.1 1.2-6.5L2.5 9.4l6.6-.9Z"/></svg></i><i class="on"><svg viewBox="0 0 24 24" aria-hidden="true" fill="currentColor"><path d="m12 2.5 2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.4l-5.9 3.1 1.2-6.5L2.5 9.4l6.6-.9Z"/></svg></i><i class="on"><svg viewBox="0 0 24 24" aria-hidden="true" fill="currentColor"><path d="m12 2.5 2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.4l-5.9 3.1 1.2-6.5L2.5 9.4l6.6-.9Z"/></svg></i><i class="on"><svg viewBox="0 0 24 24" aria-hidden="true" fill="currentColor"><path d="m12 2.5 2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.4l-5.9 3.1 1.2-6.5L2.5 9.4l6.6-.9Z"/></svg></i></span></div></div>
-      <div class="campo"><small>Avaliações</small><div class="valor">51</div></div>
-    </div>
-    <div class="campo"><small>Serviços</small>
-      <ul class="servicos"><li>Instalação</li><li>Higienização</li><li>Manutenção e conserto</li><li>Contrato preventivo</li></ul>
-    </div>
-    <div class="campo tel"><small>Chame no WhatsApp</small><div class="valor">(11) 94293-9215</div></div>
-    <div class="campo"><small>Próxima limpeza</small><div class="proxima"><span></span>/<span></span>/<span></span></div></div>
-    <a class="botao" href="https://wa.me/5511942939215?text=Ol%C3%A1!%20Vim%20pelo%20site%20e%20gostaria%20de%20um%20or%C3%A7amento."><svg viewBox="0 0 24 24" aria-hidden="true" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8s-.4-.1-.6.1-.7.8-.8 1-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.2-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.8 11.9 11.9 0 0 0 4.6 4c1.7.7 2.3.8 3.2.6a2.7 2.7 0 0 0 1.8-1.2 2.2 2.2 0 0 0 .1-1.3c0-.1-.2-.2-.4-.3Z"/></svg> Pedir orçamento</a>
-  </article>
+<div class="faixa" aria-hidden="true"><div class="trilho"><span><i></i>Instalação</span><span><i></i>Higienização</span><span><i></i>Manutenção preventiva</span><span><i></i>Conserto</span><span><i></i>Split, piso-teto e cassete</span><span><i></i>Atendimento em Itaquera</span><span><i></i>Instalação</span><span><i></i>Higienização</span><span><i></i>Manutenção preventiva</span><span><i></i>Conserto</span><span><i></i>Split, piso-teto e cassete</span><span><i></i>Atendimento em Itaquera</span></div></div>
 
-  <section class="secao" aria-labelledby="servicos">
-    <h2 id="servicos">O que a equipe faz no seu aparelho</h2>
-    <div class="placa"><div><b>Instalação</b><p>Split, piso-teto e cassete, com tubulação, suporte e teste.</p></div><div><b>Higienização</b><p>Limpeza completa da serpentina, filtros e bandeja.</p></div><div><b>Manutenção e conserto</b><p>Diagnóstico, carga de gás e troca de peças.</p></div><div><b>Contrato preventivo</b><p>Visitas programadas para empresas e condomínios.</p></div></div>
-  </section>
+<section class="secao" id="servicos"><div class="box">
+  <div class="cabeca sobe"><h2>Tudo para o seu ar <em>funcionar bem.</em></h2><p>Do aparelho novo na caixa à limpeza que tira o cheiro de mofo. Orçamento antes de qualquer serviço.</p></div>
+  <div class="servicos">
+    <a class="serv grande sobe" href="https://wa.me/5511942939215?text=Ol%C3%A1!%20Tenho%20interesse%20em%3A%20Instala%C3%A7%C3%A3o%20completa.">
+      <div class="img"><img src="https://images.unsplash.com/photo-1757219525975-03b5984bc6e8?w=900&h=700&q=72&auto=format&fit=crop" alt="Condensadora de ar-condicionado instalada em suporte" loading="lazy"></div>
+      <span class="tag">Mais pedido</span>
+      <div class="txt"><h3>Instalação completa</h3><p>Split, piso-teto e cassete, com tubulação, suporte, dreno e teste de funcionamento.</p></div>
+    </a><a class="serv pequeno sobe" href="https://wa.me/5511942939215?text=Ol%C3%A1!%20Tenho%20interesse%20em%3A%20Higieniza%C3%A7%C3%A3o.">
+      <div class="img"><img src="https://images.unsplash.com/photo-1759772238012-9d5ad59ae637?w=520&h=520&q=72&auto=format&fit=crop" alt="Unidade interna de ar-condicionado na parede" loading="lazy"></div>
+      <span class="tag">Ar mais limpo</span>
+      <div class="txt"><h3>Higienização</h3><p>Limpeza da serpentina, filtros e bandeja. Tira o cheiro e melhora o ar que você respira.</p></div>
+    </a><a class="serv pequeno sobe" href="https://wa.me/5511942939215?text=Ol%C3%A1!%20Tenho%20interesse%20em%3A%20Manuten%C3%A7%C3%A3o%20e%20conserto.">
+      <div class="img"><img src="https://images.unsplash.com/photo-1660330589827-da8ab7dd3c02?w=520&h=520&q=72&auto=format&fit=crop" alt="Técnico trabalhando em um painel elétrico" loading="lazy"></div>
+      <span class="tag">Diagnóstico</span>
+      <div class="txt"><h3>Manutenção e conserto</h3><p>Aparelho pingando, sem gelar ou fazendo barulho. Diagnóstico e reparo.</p></div>
+    </a>
+  </div>
+</div></section>
 
-  <section class="secao" aria-labelledby="prova">
-    <h2 id="prova">Quem chamou, recomenda</h2>
-    <div class="prova"><span class="num">4,9</span><div><p>Média de 51 avaliações de clientes no Google.</p><a href="https://www.google.com/maps/search/?api=1&query=WS%20AR%20CONDICIONADO%20R.%20Ant%C3%B4nio%20Bruni%2C%2047%20-%20Sala%20312%20-%20Itaquera%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2008253-070" target="_blank" rel="noopener">Ler as avaliações no Google</a></div></div>
-  </section>
+<section class="escuro" id="como"><div class="box">
+  <div class="sobe">
+    <h2>Orçamento rápido, <em>serviço sem surpresa.</em></h2>
+    <p class="intro">Você sabe o valor antes, e o técnico chega no horário combinado.</p>
+    <div class="colagem"><img src="https://images.unsplash.com/photo-1545649311-24d0ac00ae82?w=640&h=520&q=72&auto=format&fit=crop" alt="" loading="lazy"><img src="https://images.unsplash.com/photo-1762341123870-d706f257a12e?w=480&h=420&q=72&auto=format&fit=crop" alt="" loading="lazy"></div>
+  </div>
+  <ol class="passos sobe"><li><div><h3>Mande uma foto</h3><p>Conte o que precisa e envie uma foto do aparelho pelo WhatsApp.</p></div></li><li><div><h3>Receba o orçamento</h3><p>Valor claro antes de qualquer serviço.</p></div></li><li><div><h3>Agende a visita</h3><p>No dia e horário que funcionam para você.</p></div></li><li><div><h3>Ar funcionando</h3><p>Serviço feito, testado e com o local limpo.</p></div></li></ol>
+</div></section>
 
-  <section class="secao" aria-labelledby="onde">
-    <h2 id="onde">Atendimento</h2>
-    <div class="duas">
-      <div><p class="end"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s7-6.2 7-12a7 7 0 1 0-14 0c0 5.8 7 12 7 12Z"/><circle cx="12" cy="10" r="2.5"/></svg><span>R. Antônio Bruni, 47 - Sala 312 - Itaquera, São Paulo - SP, 08253-070</span></p>
-        <p style="margin-top:12px"><a href="https://www.google.com/maps/search/?api=1&query=WS%20AR%20CONDICIONADO%20R.%20Ant%C3%B4nio%20Bruni%2C%2047%20-%20Sala%20312%20-%20Itaquera%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2008253-070" target="_blank" rel="noopener" style="font-weight:700;text-underline-offset:4px">Abrir no mapa</a></p></div>
-      <table class="horas"><tbody><tr><td>Segunda</td><td>09:00–18:00</td></tr><tr><td>Terça</td><td>09:00–18:00</td></tr><tr><td>Quarta</td><td>09:00–18:00</td></tr><tr><td>Quinta</td><td>09:00–18:00</td></tr><tr><td>Sexta</td><td>09:00–18:00</td></tr><tr><td>Sábado</td><td>09:00–12:00</td></tr><tr><td>Domingo</td><td>Fechado</td></tr></tbody></table>
-    </div>
-  </section>
+<section class="secao" style="padding-bottom:0"><div class="box"><div class="prova sobe">
+  <span class="num">4,9</span>
+  <div><h2>Quem chamou, recomenda.</h2><p>Média de 51 avaliações no Google, de quem já chamou a equipe.</p></div>
+  <div style="text-align:right"><span class="estrelas" role="img" aria-label="4,9 de 5 estrelas"><i class="on"><svg viewBox="0 0 24 24" aria-hidden="true" fill="currentColor"><path d="m12 2.5 2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.4l-5.9 3.1 1.2-6.5L2.5 9.4l6.6-.9Z"/></svg></i><i class="on"><svg viewBox="0 0 24 24" aria-hidden="true" fill="currentColor"><path d="m12 2.5 2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.4l-5.9 3.1 1.2-6.5L2.5 9.4l6.6-.9Z"/></svg></i><i class="on"><svg viewBox="0 0 24 24" aria-hidden="true" fill="currentColor"><path d="m12 2.5 2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.4l-5.9 3.1 1.2-6.5L2.5 9.4l6.6-.9Z"/></svg></i><i class="on"><svg viewBox="0 0 24 24" aria-hidden="true" fill="currentColor"><path d="m12 2.5 2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.4l-5.9 3.1 1.2-6.5L2.5 9.4l6.6-.9Z"/></svg></i><i class="on"><svg viewBox="0 0 24 24" aria-hidden="true" fill="currentColor"><path d="m12 2.5 2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.4l-5.9 3.1 1.2-6.5L2.5 9.4l6.6-.9Z"/></svg></i></span><br><a class="link" style="margin-top:12px" href="https://www.google.com/maps/search/?api=1&query=WS%20AR%20CONDICIONADO%20R.%20Ant%C3%B4nio%20Bruni%2C%2047%20-%20Sala%20312%20-%20Itaquera%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2008253-070" target="_blank" rel="noopener">Ler avaliações <svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></div>
+</div></div></section>
 
-  <section class="fecho" aria-labelledby="fecho">
-    <h2 id="fecho">O calor está chegando</h2>
-    <p>Mande uma foto do aparelho e receba o orçamento pelo WhatsApp.</p>
-    <a class="botao" href="https://wa.me/5511942939215?text=Ol%C3%A1!%20Vim%20pelo%20site%20e%20gostaria%20de%20um%20or%C3%A7amento."><svg viewBox="0 0 24 24" aria-hidden="true" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8s-.4-.1-.6.1-.7.8-.8 1-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.2-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.8 11.9 11.9 0 0 0 4.6 4c1.7.7 2.3.8 3.2.6a2.7 2.7 0 0 0 1.8-1.2 2.2 2.2 0 0 0 .1-1.3c0-.1-.2-.2-.4-.3Z"/></svg> Pedir orçamento</a>
-  </section>
+<section class="secao" id="duvidas"><div class="box faq">
+  <div class="lado sobe"><h2>Antes de chamar, vale saber.</h2><p>Se a sua dúvida não estiver aqui, é só mandar uma mensagem.</p></div>
+  <div class="sobe"><details open><summary>Como peço um orçamento?<span><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></span></summary><p>Pelo WhatsApp (11) 94293-9215. Mande uma foto do aparelho e conte o que está acontecendo.</p></details><details><summary>Quais regiões vocês atendem?<span><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></span></summary><p>A base fica em Itaquera. Consulte pelo WhatsApp se o seu endereço está na área de atendimento.</p></details><details><summary>Quais são os horários?<span><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></span></summary><p>Seg a Sex · 09:00–18:00 · Sáb · 09:00–12:00</p></details><details><summary>De quanto em quanto tempo limpar o ar?<span><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></span></summary><p>O mais comum é uma higienização a cada seis meses em casa, e com mais frequência em comércios e locais com muita poeira.</p></details></div>
+</div></section>
+
+<section class="secao" id="onde" style="padding-top:0"><div class="box onde">
+  <div class="card sobe">
+    <h2>Onde e quando</h2>
+    <p class="end"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s7-6.2 7-12a7 7 0 1 0-14 0c0 5.8 7 12 7 12Z"/><circle cx="12" cy="10" r="2.5"/></svg><span>R. Antônio Bruni, 47 - Sala 312 - Itaquera, São Paulo - SP, 08253-070</span></p>
+    <table class="horas"><tbody><tr><td>Segunda</td><td>09:00–18:00</td></tr><tr><td>Terça</td><td>09:00–18:00</td></tr><tr><td>Quarta</td><td>09:00–18:00</td></tr><tr><td>Quinta</td><td>09:00–18:00</td></tr><tr><td>Sexta</td><td>09:00–18:00</td></tr><tr><td>Sábado</td><td>09:00–12:00</td></tr><tr><td>Domingo</td><td>Fechado</td></tr></tbody></table>
+  </div>
+  <div class="mapa sobe"><img src="https://images.unsplash.com/photo-1762341123870-d706f257a12e?w=800&h=700&q=72&auto=format&fit=crop" alt="Aparelho split branco instalado na parede" loading="lazy"><a class="botao" href="https://www.google.com/maps/search/?api=1&query=WS%20AR%20CONDICIONADO%20R.%20Ant%C3%B4nio%20Bruni%2C%2047%20-%20Sala%20312%20-%20Itaquera%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2008253-070" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s7-6.2 7-12a7 7 0 1 0-14 0c0 5.8 7 12 7 12Z"/><circle cx="12" cy="10" r="2.5"/></svg> Abrir no mapa</a></div>
+</div></section>
+
+<section class="box"><div class="chamada sobe">
+  <div><h2>O verão está chegando. <em>Seu ar está pronto?</em></h2><p>Peça o orçamento agora e garanta a sua data antes da fila do calor.</p></div>
+  <a class="botao" href="https://wa.me/5511942939215?text=Ol%C3%A1!%20Vim%20pelo%20site%20e%20gostaria%20de%20um%20or%C3%A7amento."><svg viewBox="0 0 24 24" aria-hidden="true" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8s-.4-.1-.6.1-.7.8-.8 1-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.2-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.8 11.9 11.9 0 0 0 4.6 4c1.7.7 2.3.8 3.2.6a2.7 2.7 0 0 0 1.8-1.2 2.2 2.2 0 0 0 .1-1.3c0-.1-.2-.2-.4-.3Z"/></svg> Pedir orçamento</a>
+</div></section>
 </main>
-<a class="flutuante" href="https://wa.me/5511942939215" aria-label="Conversar no WhatsApp"><svg viewBox="0 0 24 24" aria-hidden="true" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8s-.4-.1-.6.1-.7.8-.8 1-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.2-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.8 11.9 11.9 0 0 0 4.6 4c1.7.7 2.3.8 3.2.6a2.7 2.7 0 0 0 1.8-1.2 2.2 2.2 0 0 0 .1-1.3c0-.1-.2-.2-.4-.3Z"/></svg></a>
+
+<footer><div class="box">
+  <div class="cols">
+    <div><b>WS Ar Condicionado</b>Ar-condicionado em Itaquera, São Paulo.</div>
+    <div><b>Contato</b><a href="https://wa.me/5511942939215?text=Ol%C3%A1!%20Vim%20pelo%20site%20e%20gostaria%20de%20um%20or%C3%A7amento.">(11) 94293-9215</a><br><a href="https://www.google.com/maps/search/?api=1&query=WS%20AR%20CONDICIONADO%20R.%20Ant%C3%B4nio%20Bruni%2C%2047%20-%20Sala%20312%20-%20Itaquera%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2008253-070" target="_blank" rel="noopener">Ver no mapa</a></div>
+    <div><b>Horário</b>Seg a Sex · 09:00–18:00<br>Sáb · 09:00–12:00</div>
+  </div>
+  <div class="gigante" aria-hidden="true" style="font-size:min(12rem,calc((100vw - 40px) / 10.08))">WS Ar Condicionado</div>
+  <div class="base"><span>Prévia de demonstração criada por Juan Carvalho. Sem vínculo oficial com WS Ar Condicionado.</span><span>Fotos ilustrativas</span></div>
+</div></footer>
+<a class="flutuante" href="https://wa.me/5511942939215?text=Ol%C3%A1!%20Vim%20pelo%20site%20e%20gostaria%20de%20um%20or%C3%A7amento." aria-label="Conversar no WhatsApp"><svg viewBox="0 0 24 24" aria-hidden="true" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8s-.4-.1-.6.1-.7.8-.8 1-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.2-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.8 11.9 11.9 0 0 0 4.6 4c1.7.7 2.3.8 3.2.6a2.7 2.7 0 0 0 1.8-1.2 2.2 2.2 0 0 0 .1-1.3c0-.1-.2-.2-.4-.3Z"/></svg></a>
+<script>
+document.documentElement.classList.add('js');
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('ok');io.unobserve(e.target)}}),{rootMargin:'0px 0px -8% 0px'});
+document.querySelectorAll('.sobe').forEach(el=>io.observe(el));
+setTimeout(()=>document.querySelectorAll('.sobe').forEach(el=>el.classList.add('ok')),2500);
+</script>
 </body>
 </html>

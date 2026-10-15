@@ -4,156 +4,286 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Camila Morata · Nutricionista em Santo Amaro</title>
-<meta name="description" content="Nutrição esportiva. Plano alimentar sob medida com Camila Morata. Agende pelo WhatsApp.">
+<meta name="description" content="Nutrição esportiva. Plano alimentar individual com Camila Morata, nutricionista em Santo Amaro. Agende pelo WhatsApp.">
 <meta name="robots" content="noindex">
 <meta property="og:title" content="Camila Morata · Nutricionista em Santo Amaro">
-<meta property="og:description" content="Nutrição esportiva. Plano alimentar sob medida com Camila Morata. Agende pelo WhatsApp.">
+<meta property="og:description" content="Nutrição esportiva. Plano alimentar individual com Camila Morata, nutricionista em Santo Amaro. Agende pelo WhatsApp.">
+<meta property="og:image" content="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=1200&h=630&q=72&auto=format&fit=crop">
+<meta name="theme-color" content="#123a2c">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@400;600;700;800&family=Kalam:wght@400&display=swap" rel="stylesheet">
-<style>
+<link href="https://fonts.googleapis.com/css2?family=Young+Serif&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>:root{--titulo:'Young Serif',Georgia,serif;--texto:'Manrope',system-ui,sans-serif;--peso-titulo:400;--track-titulo:-.02em;--estilo-destaque:italic;--fundo:#edf0e8;--faixa:#e3e8dc;--cartao:#f8faf5;--tinta:#13261e;--suave:#56645b;--suave-2:#b9c2b4;--linha:rgba(19,38,30,.12);--acento:#c8643c;--acento-texto:#b4542f;--acento-claro:#e9a27f;--sobre-acento:#fff;--botao:#13261e;--sobre-botao:#f3f5ef;--sombra:rgba(19,38,30,.45);--vivo:#3fae6a;--raio-foto:220px 220px 32px 32px;--escuro:#13261e;--escuro-fundo:#123a2c;--sobre-escuro:#eef2ea;--sobre-escuro-suave:#a9bdb1;--sobre-escuro-linha:rgba(238,242,234,.14);--chamada:#e7d4b6;--sobre-chamada:#13261e}
 *{box-sizing:border-box;margin:0;padding:0}
-a{color:inherit}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{font-family:var(--texto);color:var(--tinta);background:var(--fundo);line-height:1.55;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+a{color:inherit;text-decoration:none}
 img{display:block;max-width:100%}
-.demo{background:#141414;color:#fff;font:500 12px/1.4 system-ui,sans-serif;text-align:center;padding:7px 14px}
-.flutuante{position:fixed;right:18px;bottom:18px;z-index:20;width:58px;height:58px;border-radius:50%;background:#25d366;color:#fff;display:grid;place-items:center;box-shadow:0 10px 24px -8px rgba(0,0,0,.45);transition:transform .2s cubic-bezier(.16,1,.3,1)}
-.flutuante:hover{transform:scale(1.06)}
-.flutuante svg{width:30px;height:30px}
-@media (prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}}
+::selection{background:var(--acento);color:var(--sobre-acento)}
+:focus-visible{outline:2.5px solid var(--acento);outline-offset:3px;border-radius:6px}
+*{scrollbar-width:thin;scrollbar-color:var(--suave-2) transparent}
+.demo{background:var(--escuro);color:var(--sobre-escuro);font:500 12px/1.4 var(--texto);text-align:center;padding:7px 16px;opacity:.92}
+.box{width:min(1200px,100% - 40px);margin-inline:auto}
+h1,h2,h3{font-family:var(--titulo);font-weight:var(--peso-titulo);letter-spacing:var(--track-titulo);line-height:1.04;text-wrap:balance}
+h1 em,h2 em{font-style:var(--estilo-destaque);color:var(--acento-texto)}
+.botao{display:inline-flex;align-items:center;gap:10px;padding:15px 22px 15px 24px;border-radius:999px;background:var(--botao);color:var(--sobre-botao);font-weight:650;font-size:.98rem;box-shadow:0 12px 26px -14px var(--sombra);transition:transform .25s cubic-bezier(.16,1,.3,1),box-shadow .25s}
+.botao:hover{transform:translateY(-2px);box-shadow:0 18px 30px -14px var(--sombra)}
+.botao svg{width:19px;height:19px}
+.link{display:inline-flex;align-items:center;gap:8px;font-weight:600;border-bottom:1.5px solid currentColor;padding-bottom:2px}
+.link svg{width:16px;height:16px;transition:transform .25s}
+.link:hover svg{transform:translateX(3px)}
 
-:root{--papel:#fdfdfb;--mesa:#cdd2d6;--tinta:#141414;--suave:#55534e;--filete:#d9d6ce;--caneta:#1f3fbf;--caneta-escura:#16308f}
-html{background:var(--mesa)}
-body{font-family:'Schibsted Grotesk',system-ui,sans-serif;color:var(--tinta);background:var(--mesa);-webkit-font-smoothing:antialiased;line-height:1.5}
-::selection{background:#d8defa;color:var(--tinta)}
-:focus-visible{outline:2.5px solid var(--caneta);outline-offset:3px;border-radius:2px}
-.mao{font-family:'Kalam',cursive;color:var(--caneta);font-weight:400}
-.folha{position:relative;max-width:760px;margin:14px auto 64px;background:var(--papel);box-shadow:0 1px 0 #cfccc4,0 24px 48px -28px rgba(20,20,20,.45);padding:26px 22px 34px}
-@media (min-width:800px){.folha{margin-top:40px;padding:48px 64px 56px}}
-.timbre{display:flex;justify-content:space-between;align-items:flex-end;gap:16px;border-bottom:3px solid var(--tinta);padding-bottom:14px}
-.timbre h1{font-size:clamp(1.55rem,6.4vw,2.6rem);font-weight:800;line-height:.98;letter-spacing:-.03em}
-.timbre .oficio{display:block;margin-top:8px;font-size:.78rem;font-weight:600;letter-spacing:.14em;text-transform:uppercase}
-.selo{text-align:right;flex:none}
-.selo b{display:block;font-size:clamp(1.7rem,7vw,2.6rem);font-weight:800;letter-spacing:-.03em;line-height:1}
-.estrelas{display:inline-flex;gap:2px;color:var(--tinta)}
-.estrelas i{width:13px;height:13px;opacity:.22}.estrelas i.on{opacity:1}
+/* topo */
+.topo{position:sticky;top:0;z-index:30;background:color-mix(in srgb,var(--fundo) 78%,transparent);backdrop-filter:blur(14px) saturate(1.4);-webkit-backdrop-filter:blur(14px) saturate(1.4);border-bottom:1px solid var(--linha)}
+.topo .box{display:flex;align-items:center;gap:28px;height:68px}
+.marca{font-family:var(--titulo);font-weight:var(--peso-titulo);font-size:1.12rem;letter-spacing:var(--track-titulo);white-space:nowrap}
+.marca small{font-family:var(--texto);font-weight:500;font-size:.8rem;letter-spacing:0;color:var(--suave);margin-left:6px}
+.topo nav{display:flex;gap:26px;margin-left:auto;font-size:.92rem;color:var(--suave)}
+.topo nav a:hover{color:var(--tinta)}
+.topo .botao{padding:10px 16px 10px 18px;font-size:.88rem}
+@media (max-width:860px){.topo nav{display:none}.topo .botao{margin-left:auto}.marca small{display:none}}
+
+/* hero */
+.hero{padding:clamp(36px,6vw,80px) 0 clamp(28px,4vw,48px)}
+.hero .box{display:grid;grid-template-columns:1.08fr .92fr;gap:clamp(28px,5vw,72px);align-items:center}
+.hero h1{font-size:clamp(2.6rem,6.4vw,5.4rem);margin:0 0 22px}
+.hero .sub{font-size:clamp(1.02rem,1.4vw,1.15rem);color:var(--suave);max-width:44ch}
+.hero .acoes{display:flex;flex-wrap:wrap;align-items:center;gap:22px;margin-top:30px}
+.local{display:inline-flex;align-items:center;gap:8px;font-size:.9rem;color:var(--suave);margin-bottom:22px}
+.local i{width:8px;height:8px;border-radius:50%;background:var(--vivo);box-shadow:0 0 0 4px color-mix(in srgb,var(--vivo) 22%,transparent)}
+.fatos{display:flex;gap:clamp(18px,4vw,44px);margin-top:clamp(34px,5vw,56px);padding-top:22px;border-top:1px solid var(--linha)}
+.fatos b{display:block;font-family:var(--titulo);font-weight:var(--peso-titulo);font-size:clamp(1.5rem,2.6vw,2.1rem);letter-spacing:var(--track-titulo);line-height:1}
+.fatos span{font-size:.84rem;color:var(--suave)}
+.palco{position:relative}
+.moldura{position:relative;overflow:hidden;border-radius:var(--raio-foto);aspect-ratio:4/5;box-shadow:0 30px 60px -36px var(--sombra)}
+.moldura img{width:100%;height:100%;object-fit:cover;transform:scale(1.04);animation:respira 18s ease-in-out infinite alternate}
+@keyframes respira{to{transform:scale(1.12)}}
+.cartao{position:absolute;background:color-mix(in srgb,var(--cartao) 86%,transparent);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border:1px solid color-mix(in srgb,var(--cartao) 60%,transparent);border-radius:18px;padding:14px 16px;box-shadow:0 18px 36px -18px var(--sombra);font-size:.86rem;color:var(--tinta)}
+.cartao b{display:block;font-size:1rem}
+.cartao.nota{top:22px;left:-26px;display:flex;align-items:center;gap:12px}
+.cartao.nota strong{font-family:var(--titulo);font-weight:var(--peso-titulo);font-size:2rem;line-height:1;letter-spacing:var(--track-titulo)}
+.cartao.agenda{right:-18px;bottom:28px;max-width:230px}
+.cartao.agenda .vivo{display:flex;align-items:center;gap:7px;font-size:.72rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--suave);margin-bottom:6px}
+.cartao.agenda .vivo i{width:7px;height:7px;border-radius:50%;background:var(--vivo)}
+.cartao.agenda a{display:inline-flex;align-items:center;gap:6px;margin-top:10px;font-weight:650;color:var(--acento-texto)}
+.cartao.agenda a svg{width:15px;height:15px}
+.estrelas{display:inline-flex;gap:2px;color:#f2b01e}
+.estrelas i{width:14px;height:14px;opacity:.3}.estrelas i.on{opacity:1}
 .estrelas svg{width:100%;height:100%}
-.selo small{display:block;font-size:.78rem;color:var(--suave);margin-top:2px}
-.tese{font-size:clamp(1.9rem,8.4vw,3.6rem);font-weight:800;line-height:1.02;letter-spacing:-.035em;margin:26px 0 10px;text-wrap:balance}
-.circ{position:relative;white-space:nowrap;color:var(--tinta)}
-.circ-svg{position:absolute;left:-7%;top:-2%;width:114%;height:108%;color:var(--caneta);pointer-events:none}
-.especial{display:inline-block;font-size:1rem;margin-bottom:22px}
-.especial .sub-svg{display:block;width:100%;height:8px;color:var(--caneta);margin-top:-2px}
-.prancheta{display:grid;grid-template-columns:1fr 1.05fr;gap:18px;align-items:start}
-.dia{list-style:none;font-size:.95rem}
-.dia li{display:flex;justify-content:space-between;align-items:center;gap:8px;border-bottom:1px solid var(--filete);padding:9px 0;min-height:42px}
-.dia li span:first-child{font-variant-numeric:tabular-nums}
-.dia .ck{width:24px;height:20px;color:var(--caneta);flex:none}
-.dia .vazio{width:24px;height:20px;border-bottom:1.5px dashed #b9b6ad}
-.dia .nota-mao{font-size:1rem;line-height:1.2;margin-top:10px;color:var(--caneta)}
-.retrato{position:relative;background:#fff;padding:9px 9px 34px;box-shadow:0 14px 26px -14px rgba(20,20,20,.55);transform:rotate(2.6deg);margin-top:6px}
-.retrato img{width:100%;aspect-ratio:4/5;object-fit:cover}
-.retrato .fita{position:absolute;top:-13px;left:50%;width:78px;height:24px;transform:translateX(-50%) rotate(-4deg);background:rgba(236,226,168,.82);box-shadow:0 1px 2px rgba(0,0,0,.08)}
-.retrato figcaption{position:absolute;left:12px;bottom:6px;font-size:1.05rem}
-.assina{display:flex;justify-content:flex-end;margin:22px 0 4px}
-.assina span{font-size:1.75rem;transform:rotate(-4deg);line-height:1;border-bottom:1.5px solid var(--tinta);padding:0 14px 4px}
-.carimbo{display:flex;align-items:center;justify-content:center;gap:10px;width:100%;margin-top:22px;padding:18px 20px;background:var(--caneta);color:#fff;font:700 1.05rem/1.2 'Schibsted Grotesk',sans-serif;text-decoration:none;border-radius:4px;box-shadow:0 10px 22px -12px rgba(31,63,191,.9);transition:background .2s,transform .2s cubic-bezier(.16,1,.3,1)}
-.carimbo:hover{background:var(--caneta-escura);transform:translateY(-1px)}
-.carimbo svg{width:22px;height:22px}
-.secao{margin-top:46px;padding-top:22px;border-top:3px solid var(--tinta)}
-.secao h2{font-size:clamp(1.35rem,5vw,1.9rem);font-weight:800;letter-spacing:-.025em;line-height:1.1;margin-bottom:16px;max-width:22ch}
-.rx{list-style:none}
-.rx li{display:grid;grid-template-columns:118px 1fr;gap:14px;padding:14px 0;border-bottom:1px solid var(--filete)}
-.rx b{font-weight:800;font-size:.95rem}
-.rx p{color:var(--suave);font-size:.98rem;max-width:58ch}
-.prova{display:flex;align-items:center;gap:22px;flex-wrap:wrap}
-.prova .grande{position:relative;font-size:clamp(3.4rem,15vw,5.2rem);font-weight:800;letter-spacing:-.05em;line-height:1;padding:6px 18px}
-.prova .grande .circ-svg{left:-4%;top:-6%;width:108%;height:112%}
-.prova p{max-width:34ch;color:var(--suave)}
-.prova a{display:inline-block;margin-top:8px;color:var(--caneta);font-weight:600;text-underline-offset:4px}
-.rodape{display:grid;grid-template-columns:1fr;gap:20px;font-size:.92rem}
-@media (min-width:640px){.rodape{grid-template-columns:1.1fr 1fr}}
-.rodape .end{display:flex;gap:10px;color:var(--suave)}
-.rodape .end svg{width:20px;height:20px;flex:none;color:var(--tinta);margin-top:2px}
+@media (max-width:860px){.hero .box{grid-template-columns:1fr}.palco{max-width:460px;width:100%;margin:8px auto 0}.cartao.nota{left:-6px}.cartao.agenda{right:-6px}}
+
+/* faixa */
+.faixa{overflow:hidden;padding:18px 0;border-block:1px solid var(--linha);background:var(--faixa)}
+.faixa .trilho{display:flex;gap:14px;width:max-content;animation:corre 38s linear infinite}
+.faixa span{display:inline-flex;align-items:center;gap:10px;white-space:nowrap;padding:9px 18px;border-radius:999px;background:var(--cartao);border:1px solid var(--linha);font-weight:600;font-size:.92rem}
+.faixa span i{width:7px;height:7px;border-radius:50%;background:var(--acento)}
+@keyframes corre{to{transform:translateX(-50%)}}
+
+/* seções */
+.secao{padding:clamp(64px,9vw,120px) 0}
+.cabeca{display:grid;grid-template-columns:1fr 1fr;gap:24px;align-items:end;margin-bottom:clamp(30px,4vw,52px)}
+.cabeca h2{font-size:clamp(2rem,4.2vw,3.4rem)}
+.cabeca p{color:var(--suave);max-width:42ch;justify-self:end}
+@media (max-width:760px){.cabeca{grid-template-columns:1fr}.cabeca p{justify-self:start}}
+
+/* serviços: um grande + dois menores */
+.servicos{display:grid;grid-template-columns:1.25fr 1fr;grid-template-rows:auto auto;gap:18px}
+.serv{position:relative;overflow:hidden;border-radius:28px;background:var(--cartao);border:1px solid var(--linha);display:flex;flex-direction:column}
+.serv .img{overflow:hidden}
+.serv img{width:100%;height:100%;object-fit:cover;transition:transform .6s cubic-bezier(.16,1,.3,1)}
+.serv:hover img{transform:scale(1.05)}
+.serv .txt{padding:22px 24px 24px}
+.serv h3{font-size:clamp(1.3rem,2vw,1.6rem);margin-bottom:8px}
+.serv p{color:var(--suave);font-size:.96rem;max-width:44ch}
+.serv .tag{position:absolute;top:16px;left:16px;background:color-mix(in srgb,var(--cartao) 90%,transparent);backdrop-filter:blur(8px);border-radius:999px;padding:6px 12px;font-size:.78rem;font-weight:600}
+.serv.grande{grid-row:1/3}
+.serv.grande .img{flex:1;min-height:320px}
+.serv.pequeno{flex-direction:row}
+.serv.pequeno .img{width:42%;flex:none}
+.serv.pequeno .txt{align-self:center}
+@media (max-width:760px){.servicos{grid-template-columns:1fr}.serv.grande{grid-row:auto}.serv.grande .img{min-height:240px}.serv.pequeno{flex-direction:column}.serv.pequeno .img{width:100%;height:190px}}
+
+/* bloco escuro */
+.escuro{margin:0 clamp(8px,1.6vw,24px);border-radius:clamp(28px,4vw,48px);background:var(--escuro-fundo);color:var(--sobre-escuro);padding:clamp(56px,8vw,104px) 0;position:relative;overflow:hidden;isolation:isolate}
+.escuro .box{display:grid;grid-template-columns:.9fr 1.1fr;gap:clamp(30px,6vw,90px)}
+.escuro h2{font-size:clamp(2rem,4.2vw,3.4rem);color:var(--sobre-escuro)}
+.escuro h2 em{color:var(--acento-claro)}
+.escuro .intro{color:var(--sobre-escuro-suave);margin:18px 0 28px;max-width:40ch}
+.escuro .colagem{position:relative;height:clamp(240px,30vw,340px)}
+.escuro .colagem img{position:absolute;border-radius:20px;object-fit:cover;box-shadow:0 24px 40px -20px rgba(0,0,0,.6)}
+.escuro .colagem img:first-child{width:62%;height:82%;left:0;top:0}
+.escuro .colagem img:last-child{width:50%;height:62%;right:0;bottom:0;border:5px solid var(--escuro-fundo)}
+.passos{list-style:none;counter-reset:p}
+.passos li{counter-increment:p;display:grid;grid-template-columns:56px 1fr;gap:18px;padding:22px 0;border-bottom:1px solid var(--sobre-escuro-linha)}
+.passos li:first-child{padding-top:4px}
+.passos li::before{content:counter(p,decimal-leading-zero);font-family:var(--titulo);font-size:1.5rem;color:var(--acento-claro);line-height:1.1}
+.passos h3{font-size:clamp(1.25rem,2.2vw,1.65rem);color:var(--sobre-escuro);margin-bottom:6px}
+.passos p{color:var(--sobre-escuro-suave);max-width:46ch}
+@media (max-width:860px){.escuro .box{grid-template-columns:1fr}}
+
+/* prova */
+.prova{display:grid;grid-template-columns:auto 1fr auto;gap:clamp(20px,4vw,56px);align-items:center;padding:clamp(28px,4vw,44px);border-radius:32px;background:var(--cartao);border:1px solid var(--linha)}
+.prova .num{font-family:var(--titulo);font-weight:var(--peso-titulo);font-size:clamp(4.4rem,10vw,7.5rem);line-height:.85;letter-spacing:-.04em}
+.prova h2{font-size:clamp(1.5rem,2.8vw,2.2rem);margin-bottom:8px}
+.prova p{color:var(--suave);max-width:44ch}
+.prova .estrelas i{width:20px;height:20px}
+@media (max-width:760px){.prova{grid-template-columns:1fr}}
+
+/* perguntas */
+.faq{display:grid;grid-template-columns:.8fr 1.2fr;gap:clamp(24px,5vw,80px)}
+.faq h2{font-size:clamp(2rem,4.2vw,3.4rem)}
+.faq .lado p{color:var(--suave);margin-top:16px;max-width:34ch}
+details{border-bottom:1px solid var(--linha)}
+summary{list-style:none;display:flex;justify-content:space-between;align-items:center;gap:16px;padding:22px 0;cursor:pointer;font-weight:600;font-size:1.05rem}
+summary::-webkit-details-marker{display:none}
+summary span{display:grid;place-items:center;width:34px;height:34px;flex:none;border-radius:50%;border:1px solid var(--linha);transition:transform .3s,background .3s}
+summary span svg{width:16px;height:16px}
+details[open] summary span{transform:rotate(45deg);background:var(--acento);color:var(--sobre-acento);border-color:var(--acento)}
+details p{padding:0 0 22px;color:var(--suave);max-width:58ch}
+@media (max-width:760px){.faq{grid-template-columns:1fr}}
+
+/* onde e quando */
+.onde{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.onde .card{border-radius:32px;background:var(--cartao);border:1px solid var(--linha);padding:clamp(26px,4vw,40px)}
+.onde h2{font-size:clamp(1.7rem,3.2vw,2.5rem);margin-bottom:18px}
+.onde .end{display:flex;gap:10px;color:var(--suave);margin-bottom:22px}
+.onde .end svg{width:20px;height:20px;flex:none;color:var(--tinta);margin-top:3px}
 .horas{width:100%;border-collapse:collapse;font-variant-numeric:tabular-nums}
-.horas td{padding:7px 0;border-bottom:1px solid var(--filete)}
-.horas td:last-child{text-align:right}
-.fecho{margin-top:46px;text-align:center}
-.fecho .mao{font-size:1.6rem;display:block;margin-bottom:6px}
-.fecho p{color:var(--suave)}
-@media (max-width:420px){.rx li{grid-template-columns:1fr;gap:4px}.prancheta{grid-template-columns:1.2fr .8fr;gap:12px}.dia{font-size:.86rem}.dia li{min-height:38px}}
+.horas td{padding:9px 0;border-bottom:1px solid var(--linha)}
+.horas td:last-child{text-align:right;font-weight:600}
+.onde .mapa{border-radius:32px;overflow:hidden;min-height:300px;position:relative}
+.onde .mapa img{width:100%;height:100%;object-fit:cover;position:absolute;inset:0}
+.onde .mapa a{position:absolute;left:18px;bottom:18px}
+@media (max-width:760px){.onde{grid-template-columns:1fr}}
+
+/* chamada final */
+.chamada{border-radius:clamp(28px,4vw,48px);background:var(--chamada);color:var(--sobre-chamada);padding:clamp(44px,7vw,88px) clamp(24px,6vw,80px);display:grid;grid-template-columns:1.3fr .7fr;gap:28px;align-items:end;position:relative;overflow:hidden}
+.chamada h2{font-size:clamp(2.2rem,5.2vw,4.4rem)}
+.chamada p{margin-top:16px;max-width:42ch;opacity:.85}
+.chamada .botao{justify-self:end}
+@media (max-width:760px){.chamada{grid-template-columns:1fr}.chamada .botao{justify-self:start}}
+
+/* rodapé */
+footer{margin-top:clamp(56px,8vw,96px);background:var(--escuro-fundo);color:var(--sobre-escuro);border-radius:clamp(28px,4vw,44px) clamp(28px,4vw,44px) 0 0;padding:48px 0 26px;overflow:hidden}
+footer .cols{display:grid;grid-template-columns:1.2fr 1fr 1fr;gap:28px;font-size:.92rem;color:var(--sobre-escuro-suave)}
+footer .cols b{display:block;color:var(--sobre-escuro);margin-bottom:10px;font-size:.95rem}
+footer .cols a:hover{color:var(--sobre-escuro)}
+footer .gigante{font-family:var(--titulo);font-weight:var(--peso-titulo);font-size:clamp(3.4rem,13vw,12rem);line-height:.82;letter-spacing:-.045em;color:color-mix(in srgb,var(--sobre-escuro) 14%,transparent);margin:46px 0 18px;white-space:nowrap;overflow:hidden;text-overflow:clip}
+footer .base{display:flex;justify-content:space-between;gap:16px;font-size:.8rem;color:var(--sobre-escuro-suave)}
+@media (max-width:760px){footer .cols{grid-template-columns:1fr}footer .base{flex-direction:column}}
+
+.flutuante{position:fixed;right:18px;bottom:18px;z-index:40;width:58px;height:58px;border-radius:50%;background:#25d366;color:#fff;display:grid;place-items:center;box-shadow:0 12px 26px -8px rgba(0,0,0,.45);transition:transform .25s cubic-bezier(.16,1,.3,1)}
+.flutuante:hover{transform:scale(1.07)}
+.flutuante svg{width:30px;height:30px}
+
+/* entrada: visível por padrão, sobe de leve quando o JS marca */
+.js .sobe{opacity:0;transform:translateY(22px);transition:opacity .9s cubic-bezier(.16,1,.3,1),transform .9s cubic-bezier(.16,1,.3,1)}
+.js .sobe.ok{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}.js .sobe{opacity:1;transform:none}}
 </style>
 </head>
 <body>
 <div class="demo">Prévia de demonstração criada por Juan Carvalho, sem vínculo oficial com Camila Morata.</div>
 
-<main class="folha">
-  <header class="timbre">
-    <div>
-      <h1>Camila<br>Morata</h1>
-      <span class="oficio">Nutricionista · Santo Amaro</span>
-    </div>
-    <div class="selo"><b>5,0</b><span class="estrelas " role="img" aria-label="5,0 de 5 estrelas"><i class="on"><svg viewBox="0 0 24 24" aria-hidden="true" fill="currentColor"><path d="m12 2.5 2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.4l-5.9 3.1 1.2-6.5L2.5 9.4l6.6-.9Z"/></svg></i><i class="on"><svg viewBox="0 0 24 24" aria-hidden="true" fill="currentColor"><path d="m12 2.5 2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.4l-5.9 3.1 1.2-6.5L2.5 9.4l6.6-.9Z"/></svg></i><i class="on"><svg viewBox="0 0 24 24" aria-hidden="true" fill="currentColor"><path d="m12 2.5 2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.4l-5.9 3.1 1.2-6.5L2.5 9.4l6.6-.9Z"/></svg></i><i class="on"><svg viewBox="0 0 24 24" aria-hidden="true" fill="currentColor"><path d="m12 2.5 2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.4l-5.9 3.1 1.2-6.5L2.5 9.4l6.6-.9Z"/></svg></i><i class="on"><svg viewBox="0 0 24 24" aria-hidden="true" fill="currentColor"><path d="m12 2.5 2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.4l-5.9 3.1 1.2-6.5L2.5 9.4l6.6-.9Z"/></svg></i></span><small>66 avaliações no Google</small></div>
-  </header>
+<header class="topo"><div class="box">
+  <a class="marca" href="#inicio">Camila Morata<small>Nutricionista</small></a>
+  <nav aria-label="Seções"><a href="#servicos">Atendimento</a><a href="#como">Como funciona</a><a href="#duvidas">Dúvidas</a><a href="#onde">Onde</a></nav>
+  <a class="botao" href="https://wa.me/5511984062453?text=Ol%C3%A1!%20Vim%20pelo%20site%20e%20gostaria%20de%20agendar%20uma%20consulta.">Agendar <svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+</div></header>
 
-  <p class="tese">Um plano alimentar <span class="circ">sob medida<svg class="circ-svg" viewBox="0 0 200 70" preserveAspectRatio="none" aria-hidden="true"><path d="M30 12C70 2 160 4 188 22c16 12-6 34-60 40-50 6-110 0-122-18C-2 28 20 14 60 8" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"/></svg></span> para a sua rotina.</p>
-  <span class="especial mao">Nutrição esportiva<svg class="sub-svg" viewBox="0 0 200 12" preserveAspectRatio="none" aria-hidden="true"><path d="M2 8c40-6 120-7 196-2" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"/></svg></span>
-
-  <div class="prancheta">
-    <div>
-      <ul class="dia" aria-label="Exemplo de rotina alimentar">
-        <li><span>07h · café da manhã</span><svg class="ck" viewBox="0 0 30 24" aria-hidden="true"><path d="M3 13c3 2 5 5 7 8 4-8 10-14 18-19" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg></li>
-        <li><span>10h · lanche</span><svg class="ck" viewBox="0 0 30 24" aria-hidden="true"><path d="M3 13c3 2 5 5 7 8 4-8 10-14 18-19" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg></li>
-        <li><span>13h · almoço</span><svg class="ck" viewBox="0 0 30 24" aria-hidden="true"><path d="M3 13c3 2 5 5 7 8 4-8 10-14 18-19" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg></li>
-        <li><span>16h · lanche</span><i class="vazio"></i></li>
-        <li><span>20h · jantar</span><i class="vazio"></i></li>
-      </ul>
-      <p class="nota-mao mao">exemplo de rotina: cada plano é montado na consulta</p>
+<main id="inicio">
+<section class="hero"><div class="box">
+  <div>
+    <p class="local"><i></i>Nutricionista em Santo Amaro, São Paulo</p>
+    <h1>Comer bem cabe na sua <em>rotina.</em></h1>
+    <p class="sub">Nutrição esportiva. Um plano alimentar feito a partir do que você gosta, dos seus horários e do seu objetivo.</p>
+    <div class="acoes">
+      <a class="botao" href="https://wa.me/5511984062453?text=Ol%C3%A1!%20Vim%20pelo%20site%20e%20gostaria%20de%20agendar%20uma%20consulta."><svg viewBox="0 0 24 24" aria-hidden="true" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8s-.4-.1-.6.1-.7.8-.8 1-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.2-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.8 11.9 11.9 0 0 0 4.6 4c1.7.7 2.3.8 3.2.6a2.7 2.7 0 0 0 1.8-1.2 2.2 2.2 0 0 0 .1-1.3c0-.1-.2-.2-.4-.3Z"/></svg> Agendar pelo WhatsApp</a>
+      <a class="link" href="#como">Como funciona <svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
     </div>
-    <figure class="retrato">
-      <i class="fita"></i>
-      <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=640&q=72&auto=format&fit=crop" alt="Prato de comida colorido visto de cima" width="320" height="400" loading="eager">
-      <figcaption class="mao">salmão com legumes</figcaption>
-    </figure>
+    <div class="fatos">
+      <div><b>5,0</b><span>nota no Google</span></div><div><b>66</b><span>avaliações</span></div>
+      <div><b>Santo Amaro</b><span>atendimento</span></div>
+    </div>
   </div>
-
-  <div class="assina"><span class="mao">C. Morata</span></div>
-  <a class="carimbo" href="https://wa.me/5511984062453?text=Ol%C3%A1!%20Vim%20pelo%20site%20e%20gostaria%20de%20agendar%20uma%20consulta."><svg viewBox="0 0 24 24" aria-hidden="true" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8s-.4-.1-.6.1-.7.8-.8 1-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.2-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.8 11.9 11.9 0 0 0 4.6 4c1.7.7 2.3.8 3.2.6a2.7 2.7 0 0 0 1.8-1.2 2.2 2.2 0 0 0 .1-1.3c0-.1-.2-.2-.4-.3Z"/></svg> Agendar consulta pelo WhatsApp</a>
-
-  <section class="secao" aria-labelledby="consulta">
-    <h2 id="consulta">Como funciona o acompanhamento</h2>
-    <ul class="rx">
-      <li><b>Primeira consulta</b><p>Conversa sobre a sua rotina, o que você gosta de comer, seus exames e o objetivo que te trouxe.</p></li>
-      <li><b>Seu plano</b><p>Um plano alimentar escrito para os seus horários, com substituições para os dias corridos.</p></li>
-      <li><b>Retornos</b><p>Ajustes conforme a sua evolução, até o novo jeito de comer virar hábito.</p></li>
-    </ul>
-  </section>
-
-  <section class="secao" aria-labelledby="avaliacao">
-    <h2 id="avaliacao">Quem já se consultou recomenda</h2>
-    <div class="prova">
-      <span class="grande">5,0<svg class="circ-svg" viewBox="0 0 200 70" preserveAspectRatio="none" aria-hidden="true"><path d="M30 12C70 2 160 4 188 22c16 12-6 34-60 40-50 6-110 0-122-18C-2 28 20 14 60 8" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"/></svg></span>
-      <div><p>Média de 66 avaliações de pacientes no Google.</p><a href="https://www.google.com/maps/search/?api=1&query=Nutricionista%20Esportiva%20Camila%20Morata%20Rua%20S%C3%A3o%20Benedito%2C%20509%20-%20Santo%20Amaro%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2004750-001" target="_blank" rel="noopener">Ler as avaliações no Google</a></div>
-    </div>
-  </section>
-
-  <section class="secao" aria-labelledby="onde">
-    <h2 id="onde">Onde e quando</h2>
-    <div class="rodape">
-      <div>
-        <p class="end"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s7-6.2 7-12a7 7 0 1 0-14 0c0 5.8 7 12 7 12Z"/><circle cx="12" cy="10" r="2.5"/></svg><span>Rua São Benedito, 509 - Santo Amaro, São Paulo - SP, 04750-001</span></p>
-        <p style="margin-top:12px"><a href="https://www.google.com/maps/search/?api=1&query=Nutricionista%20Esportiva%20Camila%20Morata%20Rua%20S%C3%A3o%20Benedito%2C%20509%20-%20Santo%20Amaro%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2004750-001" target="_blank" rel="noopener" style="color:var(--caneta);font-weight:600;text-underline-offset:4px">Abrir no mapa</a></p>
-        <p style="margin-top:12px;font-variant-numeric:tabular-nums">(11) 98406-2453</p>
-      </div>
-      <table class="horas"><tbody><tr><td>Segunda</td><td>08:00–13:00</td></tr><tr><td>Terça</td><td>15:00–19:00</td></tr><tr><td>Quarta</td><td>08:00–13:00</td></tr><tr><td>Quinta</td><td>15:00–19:00</td></tr><tr><td>Sexta</td><td>08:00–13:00</td></tr><tr><td>Sábado</td><td>09:00–13:00</td></tr><tr><td>Domingo</td><td>Fechado</td></tr></tbody></table>
-    </div>
-  </section>
-
-  <div class="fecho">
-    <span class="mao">Te espero na consulta.</span>
-    <p>Camila Morata, nutricionista em Santo Amaro.</p>
-    <a class="carimbo" href="https://wa.me/5511984062453?text=Ol%C3%A1!%20Vim%20pelo%20site%20e%20gostaria%20de%20agendar%20uma%20consulta."><svg viewBox="0 0 24 24" aria-hidden="true" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8s-.4-.1-.6.1-.7.8-.8 1-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.2-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.8 11.9 11.9 0 0 0 4.6 4c1.7.7 2.3.8 3.2.6a2.7 2.7 0 0 0 1.8-1.2 2.2 2.2 0 0 0 .1-1.3c0-.1-.2-.2-.4-.3Z"/></svg> Agendar consulta pelo WhatsApp</a>
+  <div class="palco">
+    <div class="moldura"><img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=900&h=1125&q=72&auto=format&fit=crop" alt="Bowl com salmão grelhado e legumes" width="900" height="1125" fetchpriority="high"></div>
+    <div class="cartao nota"><strong>5,0</strong><div><span class="estrelas" role="img" aria-label="5,0 de 5 estrelas"><i class="on"><svg viewBox="0 0 24 24" aria-hidden="true" fill="currentColor"><path d="m12 2.5 2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.4l-5.9 3.1 1.2-6.5L2.5 9.4l6.6-.9Z"/></svg></i><i class="on"><svg viewBox="0 0 24 24" aria-hidden="true" fill="currentColor"><path d="m12 2.5 2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.4l-5.9 3.1 1.2-6.5L2.5 9.4l6.6-.9Z"/></svg></i><i class="on"><svg viewBox="0 0 24 24" aria-hidden="true" fill="currentColor"><path d="m12 2.5 2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.4l-5.9 3.1 1.2-6.5L2.5 9.4l6.6-.9Z"/></svg></i><i class="on"><svg viewBox="0 0 24 24" aria-hidden="true" fill="currentColor"><path d="m12 2.5 2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.4l-5.9 3.1 1.2-6.5L2.5 9.4l6.6-.9Z"/></svg></i><i class="on"><svg viewBox="0 0 24 24" aria-hidden="true" fill="currentColor"><path d="m12 2.5 2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.4l-5.9 3.1 1.2-6.5L2.5 9.4l6.6-.9Z"/></svg></i></span><span style="display:block;margin-top:3px">66 avaliações no Google</span></div></div>
+    <div class="cartao agenda"><span class="vivo"><i></i>Agenda pelo WhatsApp</span><b>Seg · 08:00–13:00</b><a href="https://wa.me/5511984062453?text=Ol%C3%A1!%20Vim%20pelo%20site%20e%20gostaria%20de%20agendar%20uma%20consulta.">Agendar <svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></div>
   </div>
+</div></section>
+
+<div class="faixa" aria-hidden="true"><div class="trilho"><span><i></i>Performance</span><span><i></i>Hipertrofia</span><span><i></i>Pré e pós-treino</span><span><i></i>Plano alimentar individual</span><span><i></i>Retornos de acompanhamento</span><span><i></i>Atendimento em Santo Amaro</span><span><i></i>Performance</span><span><i></i>Hipertrofia</span><span><i></i>Pré e pós-treino</span><span><i></i>Plano alimentar individual</span><span><i></i>Retornos de acompanhamento</span><span><i></i>Atendimento em Santo Amaro</span></div></div>
+
+<section class="secao" id="servicos"><div class="box">
+  <div class="cabeca sobe"><h2>Três jeitos de <em>começar.</em></h2><p>Cada atendimento parte de uma conversa sobre a sua rotina. O plano vem depois, do seu tamanho.</p></div>
+  <div class="servicos">
+    <a class="serv grande sobe" href="https://wa.me/5511984062453?text=Ol%C3%A1!%20Tenho%20interesse%20em%3A%20Consulta%20individual.">
+      <div class="img"><img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=900&h=700&q=72&auto=format&fit=crop" alt="Bowl colorido com grão-de-bico, abacate e legumes" loading="lazy"></div>
+      <span class="tag">Primeiro passo</span>
+      <div class="txt"><h3>Consulta individual</h3><p>Conversa sobre rotina, exames e objetivo. Você sai com o plano alimentar montado para a sua vida.</p></div>
+    </a><a class="serv pequeno sobe" href="https://wa.me/5511984062453?text=Ol%C3%A1!%20Tenho%20interesse%20em%3A%20Treino%20e%20alimenta%C3%A7%C3%A3o%20no%20mesmo%20plano.">
+      <div class="img"><img src="https://images.unsplash.com/photo-1490645935967-10de6ba17061?w=520&h=520&q=72&auto=format&fit=crop" alt="Prato com ovo, folhas e legumes sobre a mesa" loading="lazy"></div>
+      <span class="tag">Nutrição esportiva</span>
+      <div class="txt"><h3>Treino e alimentação no mesmo plano</h3><p>Estratégia pensada para o seu objetivo, com metas claras em cada etapa.</p></div>
+    </a><a class="serv pequeno sobe" href="https://wa.me/5511984062453?text=Ol%C3%A1!%20Tenho%20interesse%20em%3A%20Acompanhamento.">
+      <div class="img"><img src="https://images.unsplash.com/photo-1494390248081-4e521a5940db?w=520&h=520&q=72&auto=format&fit=crop" alt="Mesa de café da manhã com frutas e iogurte" loading="lazy"></div>
+      <span class="tag">Retornos</span>
+      <div class="txt"><h3>Acompanhamento</h3><p>Ajustes conforme a sua evolução, até o novo jeito de comer virar hábito.</p></div>
+    </a>
+  </div>
+</div></section>
+
+<section class="escuro" id="como"><div class="box">
+  <div class="sobe">
+    <h2>Do primeiro contato ao <em>plano no papel.</em></h2>
+    <p class="intro">Sem dieta copiada da internet. Cada etapa é feita com você.</p>
+    <div class="colagem"><img src="https://images.unsplash.com/photo-1498837167922-ddd27525d352?w=640&h=520&q=72&auto=format&fit=crop" alt="" loading="lazy"><img src="https://images.unsplash.com/photo-1505576399279-565b52d4ac71?w=480&h=420&q=72&auto=format&fit=crop" alt="" loading="lazy"></div>
+  </div>
+  <ol class="passos sobe"><li><div><h3>Você chama no WhatsApp</h3><p>Escolhe o melhor dia e horário em poucos minutos.</p></div></li><li><div><h3>Consulta completa</h3><p>Conversa sobre rotina, histórico, exames e o que você gosta de comer.</p></div></li><li><div><h3>Seu plano alimentar</h3><p>Cardápio com substituições para os dias corridos.</p></div></li><li><div><h3>Retornos</h3><p>Ajustes conforme a sua evolução.</p></div></li></ol>
+</div></section>
+
+<section class="secao" style="padding-bottom:0"><div class="box"><div class="prova sobe">
+  <span class="num">5,0</span>
+  <div><h2>Quem se consultou, recomenda.</h2><p>Média de 66 avaliações no Google, de quem já se consultou.</p></div>
+  <div style="text-align:right"><span class="estrelas" role="img" aria-label="5,0 de 5 estrelas"><i class="on"><svg viewBox="0 0 24 24" aria-hidden="true" fill="currentColor"><path d="m12 2.5 2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.4l-5.9 3.1 1.2-6.5L2.5 9.4l6.6-.9Z"/></svg></i><i class="on"><svg viewBox="0 0 24 24" aria-hidden="true" fill="currentColor"><path d="m12 2.5 2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.4l-5.9 3.1 1.2-6.5L2.5 9.4l6.6-.9Z"/></svg></i><i class="on"><svg viewBox="0 0 24 24" aria-hidden="true" fill="currentColor"><path d="m12 2.5 2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.4l-5.9 3.1 1.2-6.5L2.5 9.4l6.6-.9Z"/></svg></i><i class="on"><svg viewBox="0 0 24 24" aria-hidden="true" fill="currentColor"><path d="m12 2.5 2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.4l-5.9 3.1 1.2-6.5L2.5 9.4l6.6-.9Z"/></svg></i><i class="on"><svg viewBox="0 0 24 24" aria-hidden="true" fill="currentColor"><path d="m12 2.5 2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.4l-5.9 3.1 1.2-6.5L2.5 9.4l6.6-.9Z"/></svg></i></span><br><a class="link" style="margin-top:12px" href="https://www.google.com/maps/search/?api=1&query=Nutricionista%20Esportiva%20Camila%20Morata%20Rua%20S%C3%A3o%20Benedito%2C%20509%20-%20Santo%20Amaro%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2004750-001" target="_blank" rel="noopener">Ler avaliações <svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></div>
+</div></div></section>
+
+<section class="secao" id="duvidas"><div class="box faq">
+  <div class="lado sobe"><h2>Antes de chamar, vale saber.</h2><p>Se a sua dúvida não estiver aqui, é só mandar uma mensagem.</p></div>
+  <div class="sobe"><details open><summary>Como faço para agendar?<span><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></span></summary><p>Pelo WhatsApp (11) 98406-2453. Você escolhe o dia e o horário que funcionam para você.</p></details><details><summary>Onde é o atendimento?<span><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></span></summary><p>Rua São Benedito, 509 - Santo Amaro, São Paulo - SP, 04750-001.</p></details><details><summary>Quais são os horários?<span><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></span></summary><p>Seg · 08:00–13:00 · Ter · 15:00–19:00 · Qua · 08:00–13:00 · Qui · 15:00–19:00 · Sex · 08:00–13:00 · Sáb · 09:00–13:00</p></details><details><summary>Preciso levar exames?<span><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></span></summary><p>Se tiver exames recentes, leve. Eles ajudam a montar um plano mais preciso, mas não são obrigatórios para a primeira conversa.</p></details></div>
+</div></section>
+
+<section class="secao" id="onde" style="padding-top:0"><div class="box onde">
+  <div class="card sobe">
+    <h2>Onde e quando</h2>
+    <p class="end"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s7-6.2 7-12a7 7 0 1 0-14 0c0 5.8 7 12 7 12Z"/><circle cx="12" cy="10" r="2.5"/></svg><span>Rua São Benedito, 509 - Santo Amaro, São Paulo - SP, 04750-001</span></p>
+    <table class="horas"><tbody><tr><td>Segunda</td><td>08:00–13:00</td></tr><tr><td>Terça</td><td>15:00–19:00</td></tr><tr><td>Quarta</td><td>08:00–13:00</td></tr><tr><td>Quinta</td><td>15:00–19:00</td></tr><tr><td>Sexta</td><td>08:00–13:00</td></tr><tr><td>Sábado</td><td>09:00–13:00</td></tr><tr><td>Domingo</td><td>Fechado</td></tr></tbody></table>
+  </div>
+  <div class="mapa sobe"><img src="https://images.unsplash.com/photo-1498837167922-ddd27525d352?w=800&h=700&q=72&auto=format&fit=crop" alt="Verduras e legumes frescos" loading="lazy"><a class="botao" href="https://www.google.com/maps/search/?api=1&query=Nutricionista%20Esportiva%20Camila%20Morata%20Rua%20S%C3%A3o%20Benedito%2C%20509%20-%20Santo%20Amaro%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2004750-001" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s7-6.2 7-12a7 7 0 1 0-14 0c0 5.8 7 12 7 12Z"/><circle cx="12" cy="10" r="2.5"/></svg> Abrir no mapa</a></div>
+</div></section>
+
+<section class="box"><div class="chamada sobe">
+  <div><h2>Vamos começar pelo que é <em>possível</em> para você?</h2><p>Chame no WhatsApp e escolha o melhor horário para a primeira consulta.</p></div>
+  <a class="botao" href="https://wa.me/5511984062453?text=Ol%C3%A1!%20Vim%20pelo%20site%20e%20gostaria%20de%20agendar%20uma%20consulta."><svg viewBox="0 0 24 24" aria-hidden="true" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8s-.4-.1-.6.1-.7.8-.8 1-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.2-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.8 11.9 11.9 0 0 0 4.6 4c1.7.7 2.3.8 3.2.6a2.7 2.7 0 0 0 1.8-1.2 2.2 2.2 0 0 0 .1-1.3c0-.1-.2-.2-.4-.3Z"/></svg> Agendar pelo WhatsApp</a>
+</div></section>
 </main>
-<a class="flutuante" href="https://wa.me/5511984062453" aria-label="Conversar no WhatsApp"><svg viewBox="0 0 24 24" aria-hidden="true" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8s-.4-.1-.6.1-.7.8-.8 1-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.2-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.8 11.9 11.9 0 0 0 4.6 4c1.7.7 2.3.8 3.2.6a2.7 2.7 0 0 0 1.8-1.2 2.2 2.2 0 0 0 .1-1.3c0-.1-.2-.2-.4-.3Z"/></svg></a>
+
+<footer><div class="box">
+  <div class="cols">
+    <div><b>Camila Morata</b>Nutricionista em Santo Amaro, São Paulo.</div>
+    <div><b>Contato</b><a href="https://wa.me/5511984062453?text=Ol%C3%A1!%20Vim%20pelo%20site%20e%20gostaria%20de%20agendar%20uma%20consulta.">(11) 98406-2453</a><br><a href="https://www.google.com/maps/search/?api=1&query=Nutricionista%20Esportiva%20Camila%20Morata%20Rua%20S%C3%A3o%20Benedito%2C%20509%20-%20Santo%20Amaro%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2004750-001" target="_blank" rel="noopener">Ver no mapa</a></div>
+    <div><b>Horário</b>Seg · 08:00–13:00<br>Ter · 15:00–19:00<br>Qua · 08:00–13:00<br>Qui · 15:00–19:00<br>Sex · 08:00–13:00<br>Sáb · 09:00–13:00</div>
+  </div>
+  <div class="gigante" aria-hidden="true" style="font-size:min(12rem,calc((100vw - 40px) / 7.28))">Camila Morata</div>
+  <div class="base"><span>Prévia de demonstração criada por Juan Carvalho. Sem vínculo oficial com Camila Morata.</span><span>Fotos ilustrativas</span></div>
+</div></footer>
+<a class="flutuante" href="https://wa.me/5511984062453?text=Ol%C3%A1!%20Vim%20pelo%20site%20e%20gostaria%20de%20agendar%20uma%20consulta." aria-label="Conversar no WhatsApp"><svg viewBox="0 0 24 24" aria-hidden="true" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8s-.4-.1-.6.1-.7.8-.8 1-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.2-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.8 11.9 11.9 0 0 0 4.6 4c1.7.7 2.3.8 3.2.6a2.7 2.7 0 0 0 1.8-1.2 2.2 2.2 0 0 0 .1-1.3c0-.1-.2-.2-.4-.3Z"/></svg></a>
+<script>
+document.documentElement.classList.add('js');
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('ok');io.unobserve(e.target)}}),{rootMargin:'0px 0px -8% 0px'});
+document.querySelectorAll('.sobe').forEach(el=>io.observe(el));
+setTimeout(()=>document.querySelectorAll('.sobe').forEach(el=>el.classList.add('ok')),2500);
+</script>
 </body>
 </html>
