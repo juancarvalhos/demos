@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Clínica Luís Gustavo Mota · Nutricionista em Lapa</title>
+<meta name="description" content="Performance física e mental. Plano alimentar sob medida com Clínica Luís Gustavo Mota. Agende pelo WhatsApp.">
+<meta name="robots" content="noindex">
+<meta property="og:title" content="Clínica Luís Gustavo Mota · Nutricionista em Lapa">
+<meta property="og:description" content="Performance física e mental. Plano alimentar sob medida com Clínica Luís Gustavo Mota. Agende pelo WhatsApp.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@400;600;700;800&family=Kalam:wght@400&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+a{color:inherit}
+img{display:block;max-width:100%}
+.demo{background:#141414;color:#fff;font:500 12px/1.4 system-ui,sans-serif;text-align:center;padding:7px 14px}
+.flutuante{position:fixed;right:18px;bottom:18px;z-index:20;width:58px;height:58px;border-radius:50%;background:#25d366;color:#fff;display:grid;place-items:center;box-shadow:0 10px 24px -8px rgba(0,0,0,.45);transition:transform .2s cubic-bezier(.16,1,.3,1)}
+.flutuante:hover{transform:scale(1.06)}
+.flutuante svg{width:30px;height:30px}
+@media (prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}}
+
+:root{--papel:#fdfdfb;--mesa:#cdd2d6;--tinta:#141414;--suave:#55534e;--filete:#d9d6ce;--caneta:#1f3fbf;--caneta-escura:#16308f}
+html{background:var(--mesa)}
+body{font-family:'Schibsted Grotesk',system-ui,sans-serif;color:var(--tinta);background:var(--mesa);-webkit-font-smoothing:antialiased;line-height:1.5}
+::selection{background:#d8defa;color:var(--tinta)}
+:focus-visible{outline:2.5px solid var(--caneta);outline-offset:3px;border-radius:2px}
+.mao{font-family:'Kalam',cursive;color:var(--caneta);font-weight:400}
+.folha{position:relative;max-width:760px;margin:14px auto 64px;background:var(--papel);box-shadow:0 1px 0 #cfccc4,0 24px 48px -28px rgba(20,20,20,.45);padding:26px 22px 34px}
+@media (min-width:800px){.folha{margin-top:40px;padding:48px 64px 56px}}
+.timbre{display:flex;justify-content:space-between;align-items:flex-end;gap:16px;border-bottom:3px solid var(--tinta);padding-bottom:14px}
+.timbre h1{font-size:clamp(1.55rem,6.4vw,2.6rem);font-weight:800;line-height:.98;letter-spacing:-.03em}
+.timbre .oficio{display:block;margin-top:8px;font-size:.78rem;font-weight:600;letter-spacing:.14em;text-transform:uppercase}
+.selo{text-align:right;flex:none}
+.selo b{display:block;font-size:clamp(1.7rem,7vw,2.6rem);font-weight:800;letter-spacing:-.03em;line-height:1}
+.estrelas{display:inline-flex;gap:2px;color:var(--tinta)}
+.estrelas i{width:13px;height:13px;opacity:.22}.estrelas i.on{opacity:1}
+.estrelas svg{width:100%;height:100%}
+.selo small{display:block;font-size:.78rem;color:var(--suave);margin-top:2px}
+.tese{font-size:clamp(1.9rem,8.4vw,3.6rem);font-weight:800;line-height:1.02;letter-spacing:-.035em;margin:26px 0 10px;text-wrap:balance}
+.circ{position:relative;white-space:nowrap;color:var(--tinta)}
+.circ-svg{position:absolute;left:-7%;top:-2%;width:114%;height:108%;color:var(--caneta);pointer-events:none}
+.especial{display:inline-block;font-size:1rem;margin-bottom:22px}
+.especial .sub-svg{display:block;width:100%;height:8px;color:var(--caneta);margin-top:-2px}
+.prancheta{display:grid;grid-template-columns:1fr 1.05fr;gap:18px;align-items:start}
+.dia{list-style:none;font-size:.95rem}
+.dia li{display:flex;justify-content:space-between;align-items:center;gap:8px;border-bottom:1px solid var(--filete);padding:9px 0;min-height:42px}
+.dia li span:first-child{font-variant-numeric:tabular-nums}
+.dia .ck{width:24px;height:20px;color:var(--caneta);flex:none}
+.dia .vazio{width:24px;height:20px;border-bottom:1.5px dashed #b9b6ad}
+.dia .nota-mao{font-size:1rem;line-height:1.2;margin-top:10px;color:var(--caneta)}
+.retrato{position:relative;background:#fff;padding:9px 9px 34px;box-shadow:0 14px 26px -14px rgba(20,20,20,.55);transform:rotate(2.6deg);margin-top:6px}
+.retrato img{width:100%;aspect-ratio:4/5;object-fit:cover}
+.retrato .fita{position:absolute;top:-13px;left:50%;width:78px;height:24px;transform:translateX(-50%) rotate(-4deg);background:rgba(236,226,168,.82);box-shadow:0 1px 2px rgba(0,0,0,.08)}
+.retrato figcaption{position:absolute;left:12px;bottom:6px;font-size:1.05rem}
+.assina{display:flex;justify-content:flex-end;margin:22px 0 4px}
+.assina span{font-size:1.75rem;transform:rotate(-4deg);line-height:1;border-bottom:1.5px solid var(--tinta);padding:0 14px 4px}
+.carimbo{display:flex;align-items:center;justify-content:center;gap:10px;width:100%;margin-top:22px;padding:18px 20px;background:var(--caneta);color:#fff;font:700 1.05rem/1.2 'Schibsted Grotesk',sans-serif;text-decoration:none;border-radius:4px;box-shadow:0 10px 22px -12px rgba(31,63,191,.9);transition:background .2s,transform .2s cubic-bezier(.16,1,.3,1)}
+.carimbo:hover{background:var(--caneta-escura);transform:translateY(-1px)}
+.carimbo svg{width:22px;height:22px}
+.secao{margin-top:46px;padding-top:22px;border-top:3px solid var(--tinta)}
+.secao h2{font-size:clamp(1.35rem,5vw,1.9rem);font-weight:800;letter-spacing:-.025em;line-height:1.1;margin-bottom:16px;max-width:22ch}
+.rx{list-style:none}
+.rx li{display:grid;grid-template-columns:118px 1fr;gap:14px;padding:14px 0;border-bottom:1px solid var(--filete)}
+.rx b{font-weight:800;font-size:.95rem}
+.rx p{color:var(--suave);font-size:.98rem;max-width:58ch}
+.prova{display:flex;align-items:center;gap:22px;flex-wrap:wrap}
+.prova .grande{position:relative;font-size:clamp(3.4rem,15vw,5.2rem);font-weight:800;letter-spacing:-.05em;line-height:1;padding:6px 18px}
+.prova .grande .circ-svg{left:-4%;top:-6%;width:108%;height:112%}
+.prova p{max-width:34ch;color:var(--suave)}
+.prova a{display:inline-block;margin-top:8px;color:var(--caneta);font-weight:600;text-underline-offset:4px}
+.rodape{display:grid;grid-template-columns:1fr;gap:20px;font-size:.92rem}
+@media (min-width:640px){.rodape{grid-template-columns:1.1fr 1fr}}
+.rodape .end{display:flex;gap:10px;color:var(--suave)}
+.rodape .end svg{width:20px;height:20px;flex:none;color:var(--tinta);margin-top:2px}
+.horas{width:100%;border-collapse:collapse;font-variant-numeric:tabular-nums}
+.horas td{padding:7px 0;border-bottom:1px solid var(--filete)}
+.horas td:last-child{text-align:right}
+.fecho{margin-top:46px;text-align:center}
+.fecho .mao{font-size:1.6rem;display:block;margin-bottom:6px}
+.fecho p{color:var(--suave)}
+@media (max-width:420px){.rx li{grid-template-columns:1fr;gap:4px}.prancheta{grid-template-columns:1.2fr .8fr;gap:12px}.dia{font-size:.86rem}.dia li{min-height:38px}}
+</style>
+</head>
+<body>
+<div class="demo">Prévia de demonstração criada por Juan Carvalho, sem vínculo oficial com Clínica Luís Gustavo Mota.</div>
+
+<main class="folha">
+  <header class="timbre">
+    <div>
+      <h1>Clínica Luís Gustavo<br>Mota</h1>
+      <span class="oficio">Nutricionista · Lapa</span>
+    </div>
+    <div class="selo"><b>5,0</b><span class="estrelas " role="img" aria-label="5,0 de 5 estrelas"><i class="on"><svg viewBox="0 0 24 24" aria-hidden="true" fill="currentColor"><path d="m12 2.5 2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.4l-5.9 3.1 1.2-6.5L2.5 9.4l6.6-.9Z"/></svg></i><i class="on"><svg viewBox="0 0 24 24" aria-hidden="true" fill="currentColor"><path d="m12 2.5 2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.4l-5.9 3.1 1.2-6.5L2.5 9.4l6.6-.9Z"/></svg></i><i class="on"><svg viewBox="0 0 24 24" aria-hidden="true" fill="currentColor"><path d="m12 2.5 2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.4l-5.9 3.1 1.2-6.5L2.5 9.4l6.6-.9Z"/></svg></i><i class="on"><svg viewBox="0 0 24 24" aria-hidden="true" fill="currentColor"><path d="m12 2.5 2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.4l-5.9 3.1 1.2-6.5L2.5 9.4l6.6-.9Z"/></svg></i><i class="on"><svg viewBox="0 0 24 24" aria-hidden="true" fill="currentColor"><path d="m12 2.5 2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.4l-5.9 3.1 1.2-6.5L2.5 9.4l6.6-.9Z"/></svg></i></span><small>64 avaliações no Google</small></div>
+  </header>
+
+  <p class="tese">Um plano alimentar <span class="circ">sob medida<svg class="circ-svg" viewBox="0 0 200 70" preserveAspectRatio="none" aria-hidden="true"><path d="M30 12C70 2 160 4 188 22c16 12-6 34-60 40-50 6-110 0-122-18C-2 28 20 14 60 8" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"/></svg></span> para a sua rotina.</p>
+  <span class="especial mao">Performance física e mental<svg class="sub-svg" viewBox="0 0 200 12" preserveAspectRatio="none" aria-hidden="true"><path d="M2 8c40-6 120-7 196-2" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"/></svg></span>
+
+  <div class="prancheta">
+    <div>
+      <ul class="dia" aria-label="Exemplo de rotina alimentar">
+        <li><span>07h · café da manhã</span><svg class="ck" viewBox="0 0 30 24" aria-hidden="true"><path d="M3 13c3 2 5 5 7 8 4-8 10-14 18-19" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg></li>
+        <li><span>10h · lanche</span><svg class="ck" viewBox="0 0 30 24" aria-hidden="true"><path d="M3 13c3 2 5 5 7 8 4-8 10-14 18-19" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg></li>
+        <li><span>13h · almoço</span><svg class="ck" viewBox="0 0 30 24" aria-hidden="true"><path d="M3 13c3 2 5 5 7 8 4-8 10-14 18-19" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg></li>
+        <li><span>16h · lanche</span><i class="vazio"></i></li>
+        <li><span>20h · jantar</span><i class="vazio"></i></li>
+      </ul>
+      <p class="nota-mao mao">exemplo de rotina: cada plano é montado na consulta</p>
+    </div>
+    <figure class="retrato">
+      <i class="fita"></i>
+      <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=640&q=72&auto=format&fit=crop" alt="Prato de comida colorido visto de cima" width="320" height="400" loading="eager">
+      <figcaption class="mao">salmão com legumes</figcaption>
+    </figure>
+  </div>
+
+  <div class="assina"><span class="mao">L. G. Mota</span></div>
+  <a class="carimbo" href="https://wa.me/5511914893385?text=Ol%C3%A1!%20Vim%20pelo%20site%20e%20gostaria%20de%20agendar%20uma%20consulta."><svg viewBox="0 0 24 24" aria-hidden="true" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8s-.4-.1-.6.1-.7.8-.8 1-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.2-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.8 11.9 11.9 0 0 0 4.6 4c1.7.7 2.3.8 3.2.6a2.7 2.7 0 0 0 1.8-1.2 2.2 2.2 0 0 0 .1-1.3c0-.1-.2-.2-.4-.3Z"/></svg> Agendar consulta pelo WhatsApp</a>
+
+  <section class="secao" aria-labelledby="consulta">
+    <h2 id="consulta">Como funciona o acompanhamento</h2>
+    <ul class="rx">
+      <li><b>Primeira consulta</b><p>Conversa sobre a sua rotina, o que você gosta de comer, seus exames e o objetivo que te trouxe.</p></li>
+      <li><b>Seu plano</b><p>Um plano alimentar escrito para os seus horários, com substituições para os dias corridos.</p></li>
+      <li><b>Retornos</b><p>Ajustes conforme a sua evolução, até o novo jeito de comer virar hábito.</p></li>
+    </ul>
+  </section>
+
+  <section class="secao" aria-labelledby="avaliacao">
+    <h2 id="avaliacao">Quem já se consultou recomenda</h2>
+    <div class="prova">
+      <span class="grande">5,0<svg class="circ-svg" viewBox="0 0 200 70" preserveAspectRatio="none" aria-hidden="true"><path d="M30 12C70 2 160 4 188 22c16 12-6 34-60 40-50 6-110 0-122-18C-2 28 20 14 60 8" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"/></svg></span>
+      <div><p>Média de 64 avaliações de pacientes no Google.</p><a href="https://www.google.com/maps/search/?api=1&query=Cl%C3%ADnica%20Doutor%20Lu%C3%ADs%20Gustavo%20Mota%20-%20Performance%20F%C3%ADsica%20%26%20Mental%20R.%20Cl%C3%A9lia%2C%202208%20-%20Lapa%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2005042-001" target="_blank" rel="noopener">Ler as avaliações no Google</a></div>
+    </div>
+  </section>
+
+  <section class="secao" aria-labelledby="onde">
+    <h2 id="onde">Onde e quando</h2>
+    <div class="rodape">
+      <div>
+        <p class="end"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s7-6.2 7-12a7 7 0 1 0-14 0c0 5.8 7 12 7 12Z"/><circle cx="12" cy="10" r="2.5"/></svg><span>R. Clélia, 2208 - Lapa, São Paulo - SP, 05042-001</span></p>
+        <p style="margin-top:12px"><a href="https://www.google.com/maps/search/?api=1&query=Cl%C3%ADnica%20Doutor%20Lu%C3%ADs%20Gustavo%20Mota%20-%20Performance%20F%C3%ADsica%20%26%20Mental%20R.%20Cl%C3%A9lia%2C%202208%20-%20Lapa%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2005042-001" target="_blank" rel="noopener" style="color:var(--caneta);font-weight:600;text-underline-offset:4px">Abrir no mapa</a></p>
+        <p style="margin-top:12px;font-variant-numeric:tabular-nums">(11) 91489-3385</p>
+      </div>
+      <table class="horas"><tbody><tr><td>Segunda</td><td>09:00–21:00</td></tr><tr><td>Terça</td><td>09:00–21:00</td></tr><tr><td>Quarta</td><td>09:00–21:00</td></tr><tr><td>Quinta</td><td>09:00–21:00</td></tr><tr><td>Sexta</td><td>09:00–21:00</td></tr><tr><td>Sábado</td><td>10:00–16:00</td></tr><tr><td>Domingo</td><td>Fechado</td></tr></tbody></table>
+    </div>
+  </section>
+
+  <div class="fecho">
+    <span class="mao">Te espero na consulta.</span>
+    <p>Clínica Luís Gustavo Mota, nutricionista em Lapa.</p>
+    <a class="carimbo" href="https://wa.me/5511914893385?text=Ol%C3%A1!%20Vim%20pelo%20site%20e%20gostaria%20de%20agendar%20uma%20consulta."><svg viewBox="0 0 24 24" aria-hidden="true" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8s-.4-.1-.6.1-.7.8-.8 1-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.2-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.8 11.9 11.9 0 0 0 4.6 4c1.7.7 2.3.8 3.2.6a2.7 2.7 0 0 0 1.8-1.2 2.2 2.2 0 0 0 .1-1.3c0-.1-.2-.2-.4-.3Z"/></svg> Agendar consulta pelo WhatsApp</a>
+  </div>
+</main>
+<a class="flutuante" href="https://wa.me/5511914893385" aria-label="Conversar no WhatsApp"><svg viewBox="0 0 24 24" aria-hidden="true" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8s-.4-.1-.6.1-.7.8-.8 1-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.2-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.8 11.9 11.9 0 0 0 4.6 4c1.7.7 2.3.8 3.2.6a2.7 2.7 0 0 0 1.8-1.2 2.2 2.2 0 0 0 .1-1.3c0-.1-.2-.2-.4-.3Z"/></svg></a>
+</body>
+</html>
